@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'League Spartan';
+  font-style: bold;
+  font-weight: 700;
+  src: url('../fonts/LeagueSpartan-Bold.otf'); /* IE9 Compat Modes */
+}
+@import './components/header.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+body {
+  margin: 0px;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#root{
+  overflow:auto;
+}

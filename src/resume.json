@@ -1,0 +1,21 @@
+{
+    "greetings": "Welcome on my digital resume, where you'll learn more about myself and what I do.",
+    "name": "Test",
+    "firstName": "test",
+    "birthDate": "05/11/1994",
+    "email": "test@gmail.com",
+    "position": "Front-end Developper",
+    "location" : {
+        "city": "London",
+        "Country": "United Kingdom",
+        "countryCode": "UK"
+    },
+    "phoneNumber": {
+        "fr": "(+33) 667 258 927",
+        "en": "(+44) 770 720 4667"
+    },
+    "introduction":{
+        "title": "About Myself",
+        "text": "I’ve always been highly curious of the world around me. The acquisition of new knowledge is a great motivation to/for ? me, I’m always keen to learn new stuff. Be ready for the questions.\n\nI’m a science lover and a geek keen on IT, video game, science fiction, music …\n\nOn my leisure I love to work on side projects with my friends to put new learned technology into practice, read scientific news and designing small and mere electronic project (using raspberry PI) to satisfy my curiosity.\n Surly I also enjoy some relaxation watching TV show and meeting my friends"
+    }
+}
