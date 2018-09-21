@@ -1,0 +1,31 @@
+.card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center; }
+  .card-row .btlr {
+    border-top-left-radius: 25px; }
+  .card-row .btrr {
+    border-top-right-radius: 25px; }
+  .card-row .bblr {
+    border-bottom-left-radius: 25px; }
+  .card-row .bbrr {
+    border-bottom-right-radius: 25px; }
+
+.card-col {
+  padding: 2px; }
+  .card-col.third {
+    width: 33.3333332%; }
+  .card-col.half {
+    width: 50%; }
+
+.card {
+  height: 100%;
+  padding: 30px 35px;
+  background: #fff; }
+  .card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center; }

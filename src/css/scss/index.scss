@@ -2,21 +2,86 @@
   font-family: 'League Spartan';
   font-style: bold;
   font-weight: 700;
-  src: url('../fonts/LeagueSpartan-Bold.otf'); /* IE9 Compat Modes */
+  src: url('../fonts/LeagueSpartan-Bold.otf');
+  /* IE9 Compat Modes */
 }
-@import './components/header.scss';
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Mukta+Malar:200,300,400,500,600,700,800|Roboto|Source+Sans+Pro');
+@import './variables.scss';
 
 body {
   margin: 0px;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  color: #636366;
+  font-family: 'Lato', sans-serif !important;
 }
 
-h1{
-  font-family: 'Montserrat', sans-serif;
+p{
+  font-size: 16px;
 }
 
-#root{
-  overflow:auto;
+.container{
+  width: 100%;
+  max-width: 1170px;
+   margin: 15px auto}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #414a4f;
+  font-family: 'Mukta Malar', sans-serif;
 }
+
+.primary-bg{
+  background-color: $primary;
+  h3.section-title{
+    color: #fff;
+    &+.divider {
+      background-color: #fff;
+    }
+  }
+}
+h3.section-title {
+  text-align: center;
+  font-size: 27px;
+  line-height: 31px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+
+  &+.divider {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: $primary;
+    height: 7px;
+    width: 50px;
+    border-radius: 100px;
+    position: relative;
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      background-color: $secondary;
+      height: 7px;
+      width: 7px;
+      border-radius: 100px;
+    }
+    &:after{
+      right: -15px;
+    }
+    &:before{
+      left: -15px;
+    }
+  }
+}
+
+#root {
+  overflow: auto;
+}
+
+
+@import './base/card.scss';
+@import './components/header.scss';

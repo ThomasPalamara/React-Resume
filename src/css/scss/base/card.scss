@@ -1,0 +1,41 @@
+.card-row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+    align-content: center;
+    .btlr{
+        border-top-left-radius: 25px
+    }
+    .btrr{
+        border-top-right-radius: 25px
+    }
+    .bblr{
+        border-bottom-left-radius: 25px
+    }
+    .bbrr{
+        border-bottom-right-radius: 25px
+    }
+}
+
+.card-col{
+    padding: 2px;
+    &.third{
+        width: 33.3333332%;
+    }
+    &.half{
+        width: 50%;
+    }
+}
+
+.card{
+    height: 100%;
+    padding: 30px 35px;
+    background: #fff;
+    h4{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+}

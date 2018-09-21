@@ -5,7 +5,7 @@
     "birthDate": "05/11/1994",
     "email": "test@gmail.com",
     "position": "Front-end Developper",
-    "location" : {
+    "location": {
         "city": "London",
         "Country": "United Kingdom",
         "countryCode": "UK"
@@ -14,8 +14,31 @@
         "fr": "(+33) 667 258 927",
         "en": "(+44) 770 720 4667"
     },
-    "introduction":{
+    "introduction": {
         "title": "About Myself",
-        "text": "I’ve always been highly curious of the world around me. The acquisition of new knowledge is a great motivation to/for ? me, I’m always keen to learn new stuff. Be ready for the questions.\n\nI’m a science lover and a geek keen on IT, video game, science fiction, music …\n\nOn my leisure I love to work on side projects with my friends to put new learned technology into practice, read scientific news and designing small and mere electronic project (using raspberry PI) to satisfy my curiosity.\n Surly I also enjoy some relaxation watching TV show and meeting my friends"
+        "text": "<p>I’ve always been highly curious of the world around me. The acquisition of new knowledge is a great motivation to/for ? me, I’m always keen to learn new stuff. Be ready for the questions.<br />I’m a science lover and a geek keen on IT, video game, science fiction, music …<\/p><p>After high school I started to learn chemistry. As it turns out life led me back to computers with the my two-years degree in electrical ingeneering and computer science. I had a great time learning programming and animating robots and other electronic stuff.<\/p><p>Finally I developped an android application as part of an internship. I wanted to experience all the possibilities that programming languages offers. I ended up learning web development.<\/p><p>Since then I moved in London to work in this great city.<\/p>"
+    },
+    "skills": {
+        "title": "",
+        "categories": [{
+            "title": "Front-End",
+            "description": "I love how programmation allow us to give life to our ideas and allow users enjoy them. I place great emphasis on intuive and clean experiences",
+            "elements": ["JavaScript", "JQuery", "ReactJS", "HTML", "CSS", "Sass", "Bootstrap"]
+        }, {
+            "title": "Tools",
+            "description": "Using the right tools is the most important thing while coding. Some save you time, some simplify your work ... If something is bothering you there is a tool to help you.",
+            "elements": ["Git", "npm", "yarn", "Grunt", "Webpack", "WampServer", "Visual Studio Code"]
+        }, {
+            "title": "Back-End",
+            "description": "Using the right tools is the most important thing while coding. Some save you time, some simplify your work ... If something is bothering you there is a tool to help you.",
+            "elements": ["SQL", "phpMyAdmin", "MongoDB", "NodeJS", "PHP"]
+        }, {
+            "title": "Languages",
+            "elements": ["French: Native", "English: Advanced"]
+        },{
+            "title": "Design",
+            "elements": ["Photoshop", "Illustrator", "Figma"]
+        }]
     }
+
 }

@@ -1,10 +1,102 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Lato|Mukta+Malar:200,300,400,500,600,700,800|Roboto|Source+Sans+Pro");
 @font-face {
   font-family: 'League Spartan';
   font-style: bold;
   font-weight: 700;
   src: url("../fonts/LeagueSpartan-Bold.otf");
   /* IE9 Compat Modes */ }
+
+body {
+  margin: 0px;
+  padding: 0;
+  color: #636366;
+  font-family: 'Lato', sans-serif !important; }
+
+p {
+  font-size: 16px; }
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 15px auto; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #414a4f;
+  font-family: 'Mukta Malar', sans-serif; }
+
+.primary-bg {
+  background-color: #5AB9EA; }
+  .primary-bg h3.section-title {
+    color: #fff; }
+    .primary-bg h3.section-title + .divider {
+      background-color: #fff; }
+
+h3.section-title {
+  text-align: center;
+  font-size: 27px;
+  line-height: 31px;
+  font-weight: bold;
+  letter-spacing: 0.1em; }
+  h3.section-title + .divider {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: #5AB9EA;
+    height: 7px;
+    width: 50px;
+    border-radius: 100px;
+    position: relative; }
+    h3.section-title + .divider:after, h3.section-title + .divider:before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      background-color: #8860D0;
+      height: 7px;
+      width: 7px;
+      border-radius: 100px; }
+    h3.section-title + .divider:after {
+      right: -15px; }
+    h3.section-title + .divider:before {
+      left: -15px; }
+
+#root {
+  overflow: auto; }
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center; }
+  .card-row .btlr {
+    border-top-left-radius: 25px; }
+  .card-row .btrr {
+    border-top-right-radius: 25px; }
+  .card-row .bblr {
+    border-bottom-left-radius: 25px; }
+  .card-row .bbrr {
+    border-bottom-right-radius: 25px; }
+
+.card-col {
+  padding: 2px; }
+  .card-col.third {
+    width: 33.3333332%; }
+  .card-col.half {
+    width: 50%; }
+
+.card {
+  height: 100%;
+  padding: 30px 35px;
+  background: #fff; }
+  .card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center; }
 
 header {
   overflow: auto;
@@ -43,15 +135,4 @@ header {
     overflow: hidden;
     transform: skewY(-5deg);
     transform-origin: 0;
-    background: linear-gradient(93deg, #5AB9EA, #5AB9EA); }
-
-body {
-  margin: 0px;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif; }
-
-h1 {
-  font-family: 'Montserrat', sans-serif; }
-
-#root {
-  overflow: auto; }
+    background: linear-gradient(93deg, #5AB9EA, #8860D0); }
