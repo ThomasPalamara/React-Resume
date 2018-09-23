@@ -45,14 +45,12 @@
         "text": "Here some of my projects. Not much but working on filling this section !",
         "elements":[{
             "title": "Auction Price Track Client",
-            "descriptions": "This project helps people to track the price of some items in the game World of Warcraft thus helps them make profits.\nThe client part allow users to select their what items interest them and display the statistics.",
-            "tech": ["React", "Scss", "D3.js", "ES6"]
+            "description": "This project helps people to track the price of some items in the game World of Warcraft thus helps them make profits.\nThe client part allow users to select their what items interest them and display the statistics.",
+            "techs": ["React", "Scss", "D3.js", "ES6"]
         },{
             "title": "Auction Price Track Server",
-            "descriptions": "It's the server part of the previous project. Blizzard (Developper of World Of warcraft) provides an API that allow us to see the state of the auction house in game and so the data we need. ",
-            "tech": ["NodeJS", "API Rest"]
+            "description": "It's the server part of the previous project. Blizzard (Developper of World Of warcraft) provides an API that allow us to see the state of the auction house in game and so the data we need. ",
+            "techs": ["NodeJS", "API Rest", "MongoDB", "Mongoose"]
         }]
     }
-
-
 }

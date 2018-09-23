@@ -1,0 +1,25 @@
+#projects {
+    .project-item{
+        border: $primary 1px solid;
+        border-radius: 16px;
+        margin: 30px 0;
+        padding: 20px;
+    }
+    .project-tech {
+
+        p,
+        ul,
+        li {
+            display: inline-block;
+        }
+
+        li {
+            &:after {
+                content: ',\2002';
+            }
+            &:last-child:after{
+                content: '.';
+            }
+        }
+    }
+}
