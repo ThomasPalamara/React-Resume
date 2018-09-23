@@ -16,14 +16,20 @@ body {
   font-family: 'Lato', sans-serif !important;
 }
 
-p{
+p {
   font-size: 16px;
 }
 
-.container{
+.container {
   width: 100%;
   max-width: 1170px;
-   margin: 15px auto}
+  margin: 15px auto
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
 h1,
 h2,
@@ -35,21 +41,25 @@ h6 {
   font-family: 'Mukta Malar', sans-serif;
 }
 
-.primary-bg{
+.primary-bg {
   background-color: $primary;
-  h3.section-title{
+
+  h3.section-title {
     color: #fff;
+
     &+.divider {
       background-color: #fff;
     }
   }
 }
+
 h3.section-title {
   text-align: center;
   font-size: 27px;
   line-height: 31px;
   font-weight: bold;
-  letter-spacing: 0.1em;
+  // letter-spacing: 0.1em;
+  text-transform: uppercase;
 
   &+.divider {
     margin: 0 auto;
@@ -59,6 +69,7 @@ h3.section-title {
     width: 50px;
     border-radius: 100px;
     position: relative;
+
     &:after,
     &:before {
       content: '';
@@ -69,10 +80,12 @@ h3.section-title {
       width: 7px;
       border-radius: 100px;
     }
-    &:after{
+
+    &:after {
       right: -15px;
     }
-    &:before{
+
+    &:before {
       left: -15px;
     }
   }
@@ -85,3 +98,5 @@ h3.section-title {
 
 @import './base/card.scss';
 @import './components/header.scss';
+@import './components/introduction.scss';
+@import './components/skills.scss';
