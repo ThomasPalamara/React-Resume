@@ -1,5 +1,5 @@
 #projects {
-    .project-item{
+    .project-item {
         border: $primary 1px solid;
         border-radius: 16px;
         margin: 30px 0;
@@ -7,7 +7,21 @@
         padding-bottom: 50px;
         overflow: hidden;
         position: relative;
+
+        .tag {
+            font-family: 'League Spartan';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            font-size: 103px;
+            font-weight: 900;
+            color: #eaeaea;
+            z-index: -1;
+        }
     }
+
     .project-tech {
         background-color: $primary;
         color: #fff;
@@ -29,7 +43,8 @@
             &:after {
                 content: ',\2002';
             }
-            &:last-child:after{
+
+            &:last-child:after {
                 content: '.';
             }
         }

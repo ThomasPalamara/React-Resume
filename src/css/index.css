@@ -6,6 +6,9 @@
   src: url("../fonts/LeagueSpartan-Bold.otf");
   /* IE9 Compat Modes */ }
 
+body, html{
+  height: auto;
+}
 body {
   margin: 0px;
   padding: 0;
@@ -178,6 +181,17 @@ header {
   padding-bottom: 50px;
   overflow: hidden;
   position: relative; }
+  #projects .project-item .tag {
+    font-family: 'League Spartan';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    font-size: 103px;
+    font-weight: 900;
+    color: #eaeaea;
+    z-index: -1; }
 
 #projects .project-tech {
   background-color: #5AB9EA;
