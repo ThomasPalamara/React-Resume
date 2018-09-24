@@ -4,8 +4,20 @@
         border-radius: 16px;
         margin: 30px 0;
         padding: 20px;
+        padding-bottom: 50px;
+        overflow: hidden;
+        position: relative;
     }
     .project-tech {
+        background-color: $primary;
+        color: #fff;
+        margin: -20px;
+        margin-top: 0;
+        padding-top: 5px;
+        padding-left: 20px;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
 
         p,
         ul,
