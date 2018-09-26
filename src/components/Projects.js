@@ -9,6 +9,8 @@ class Projects extends React.Component {
         this.state = {};
     }
 
+
+
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
     }
@@ -16,17 +18,28 @@ class Projects extends React.Component {
     handleScroll() {
 
         const scrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
-        var winHeight = window.innerHeight;
 
-        // Annoying to compute doc height due to browser inconsistency
-        var body = document.body;
-        var html = document.documentElement;
-        var docHeight = Math.max( body.scrollHeight, body.offsetHeight, 
-                        html.clientHeight, html.scrollHeight, html.offsetHeight );
-     
-        var value = document.body.scrollTop;
+        const projectItems = document.getElementsByClassName('project-item');
 
-        console.log(scrollTop);
+        Array.prototype.forEach.call(projectItems, function(project) {
+            if (scrollTop + window.innerHeight > getTopPosition(project)) {
+                var scrolledIn = scrollTop + window.innerHeight - getTopPosition(project); //How much did we scrolled in the element. How many pixels of the element do we see
+                var percentDisplayed = Math.min(100, (scrolledIn * 100) / project.offsetHeight);
+
+                project.style.transform = `translateX(${ 150 - (percentDisplayed*1.5)}px)`;
+                project.style.opacity = percentDisplayed / 100;
+            }
+        });
+
+        function getTopPosition(element) {
+            var yPosition = 0;
+
+            while (element) {
+                yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+                element = element.offsetParent;
+            }
+            return yPosition;
+        }
     }
     render() {
         return (
@@ -39,8 +52,8 @@ class Projects extends React.Component {
                                 <div className="divider"></div>
                                 <div>{resume.projects.text}</div>
                                 <div>
-                                    {resume.projects.elements.map(element => (
-                                        <div className="project-item">
+                                    {resume.projects.elements.map((element, i) => (
+                                        <div id={`project-${i}`} className="project-item">
                                             <div className="tag">APT</div>
                                             <h3>{element.title}</h3>
                                             <p>{element.description}</p>
