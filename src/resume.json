@@ -16,21 +16,21 @@
     },
     "introduction": {
         "title": "About Myself",
-        "text": "<p>I’ve always been highly curious of the world around me. The acquisition of new knowledge is a great motivation to/for ? me, I’m always keen to learn new stuff. Be ready for the questions.<br />I’m a science lover and a geek keen on IT, video game, science fiction, music …<\/p><p>After high school I started to learn chemistry. As it turns out life led me back to computers with the my two-years degree in electrical ingeneering and computer science. I had a great time learning programming and animating robots and other electronic stuff.<\/p><p>Finally I developped an android application as part of an internship. I wanted to experience all the possibilities that programming languages offers. I ended up learning web development.<\/p><p>Since then I moved in London to work in this great city.<\/p>"
+        "text": "<p>I’ve always been highly curious about the world around me. The acquisition of new knowledge is a great motivation for me, I’m always keen to learn new stuff. Be ready for the questions.<br>I’m a science lover and a geek keen on IT, video game, science fiction, music …<\/p><p>After high school I started to learn chemistry. As it turns out life led me back to computers with the my two-years degree in electrical engineering and computer science. I had a great time learning programming and animating robots and other electronic stuff.<\/p><p>Finally, I developed an android application as part of an internship. I wanted to experience all the possibilities that programming languages offers. I ended up learning web development.<\/p><p>Since then I moved in London to work in this great city.<\/p>"
     },
     "skills": {
         "title": "My Skills",
         "categories": [{
             "title": "Front-End",
-            "description": "I love how programmation allow us to give life to our ideas and allow users enjoy them. I place great emphasis on intuive and clean experiences",
+            "description": "I love how programming allow us to give life to our ideas and allow users enjoy them. I place great emphasis on intuitive and clean experiences.",
             "elements": ["JavaScript", "JQuery", "ReactJS", "HTML", "CSS", "Sass", "Bootstrap"]
         }, {
             "title": "Tools",
-            "description": "Using the right tools is the most important thing while coding. Some save you time, some simplify your work ... If something is bothering you there is a tool to help you.",
+            "description": "Using the right tools is the most important thing while coding. Some save you time, some simplify your work... If something is bothering you there is a tool to help you.",
             "elements": ["Git", "npm", "yarn", "Grunt", "Webpack", "WampServer", "Visual Studio Code"]
         }, {
             "title": "Back-End",
-            "description": "Using the right tools is the most important thing while coding. Some save you time, some simplify your work ... If something is bothering you there is a tool to help you.",
+            "description": "Using the right tools is the most important thing while coding. Some save you time, some simplify your work... If something is bothering you there is a tool to help you.",
             "elements": ["SQL", "phpMyAdmin", "MongoDB", "NodeJS", "PHP"]
         }, {
             "title": "Languages",
