@@ -34,19 +34,21 @@
         width: 50%;
     }
 
-    
-        &:first-child .card {
-            border-top-left-radius: 15px
-        }
-        &:nth-child(3) .card {
-            border-top-right-radius: 15px
-        }
-        &:nth-child(4) .card {
-            border-bottom-left-radius: 15px
-        }
-        &:last-child .card {
-            border-bottom-right-radius: 15px
-        }
+    &:first-child .card {
+        border-top-left-radius: 15px;
+    }
+
+    &:nth-child(3) .card {
+        border-top-right-radius: 15px;
+    }
+
+    &:nth-child(4) .card {
+        border-bottom-left-radius: 15px;
+    }
+
+    &:last-child .card {
+        border-bottom-right-radius: 15px;
+    }
 }
 
 .card {
@@ -60,15 +62,16 @@
         font-weight: bold;
         text-align: center;
     }
-    p{
+
+    p {
         font-size: 14px;
     }
-    ul{
+
+    ul {
         list-style: none;
         text-align: center;
         padding: 0;
-        li{
-            
-        }
+
+        li {}
     }
 }

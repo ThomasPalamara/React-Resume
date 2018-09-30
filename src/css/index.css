@@ -6,9 +6,6 @@
   src: url("../fonts/LeagueSpartan-Bold.otf");
   /* IE9 Compat Modes */ }
 
-body, html{
-  height: auto;
-}
 body {
   margin: 0px;
   padding: 0;

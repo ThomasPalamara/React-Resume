@@ -17,9 +17,6 @@ const Introduction = (props) => (
                     <h3 className="section-title">{resume.skills.title}</h3>
                     <div className="divider" />
                     <div className="card-row first">
-                        <svg viewBox="0 0 32 32">
-                            <use href={design}></use>
-                        </svg>
                     {resume.skills.categories.map((category, i) => (
                         <div key={i} className={`card-col ${i < 3 ? 'third' : 'half'}`}>
                             <div className="card">
