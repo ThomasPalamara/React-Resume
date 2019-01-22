@@ -1,5 +1,5 @@
 import React from "react";
-import { ResumeContext } from '../context/ResumeContext';
+import { ResumeContext } from '../context/Resume';
 import { Row, Col } from 'antd';
 
 const Introduction = (props) => (
