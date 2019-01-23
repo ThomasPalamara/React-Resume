@@ -4,7 +4,7 @@ import Introduction from "./Introduction";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Language from "./Language";
-import { ResumeContext, resume } from 'context/Resume';
+import { ResumeContext, resumeJSON } from 'context/Resume';
 
 class Resume extends React.Component {
     constructor(props) {
@@ -14,18 +14,19 @@ class Resume extends React.Component {
         };
     }
 
-    languageHandler(language){
+    languageHandler = (language) => {
+        console.log(language);
         this.setState({ language })
     }
 
     render() {
         return (
-            <ResumeContext.Provider value={resume[this.state.language]} className="App">
+            <ResumeContext.Provider value={resumeJSON[this.state.language]} className="App">
                 <Language languageHandler={this.languageHandler}/>
                 <Header />
-                <Introduction />
-                <Skills />
-                <Projects />
+                    <Introduction />
+                    <Skills />
+                    <Projects />
             </ResumeContext.Provider>
         )
     }

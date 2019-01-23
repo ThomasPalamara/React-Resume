@@ -1,19 +1,19 @@
 import React from 'react';
-const resume_en = require("resume.json");
-const resume_fr = require("resume.json");
+const resume_en = require("resume_en.json");
+const resume_fr = require("resume_fr.json");
 
-export const resume = {
+export const resumeJSON = {
   en: resume_en,
   fr: resume_fr,
 };
 
 const ResumeContext = React.createContext(
-  resume_en // default value
+  null // default value
 );
 
-export const ResumeData = Component => props => (
+export const withResumeData = Component => props => (
   <ResumeContext.Consumer>
-    {firebase => <Component {...props} firebase={firebase} />}
+    {resume => (<Component {...props} resume={resume} />)}
   </ResumeContext.Consumer>
 );
 

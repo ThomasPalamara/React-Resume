@@ -1,4 +1,3 @@
-import ResumeContext, { ResumeData } from './context';
+import ResumeContext, { withResumeData, resumeJSON } from './context';
 
-export default ResumeData;
-export { ResumeContext, ResumeData };
+export { ResumeContext, withResumeData, resumeJSON };

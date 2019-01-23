@@ -1,15 +1,16 @@
 import React from "react";
-import { ResumeContext } from '../context/Resume';
+import { withResumeData } from '../context/Resume';
 import { Row, Col } from 'antd';
 
-const Header = (props) => (
-    <ResumeContext.Consumer>
-        {resume => (
+const Header = (props) => {
+    const resume = props.resume;
+    return (
+        <React.Fragment>
             <header>
                 <div className="header-bg"></div><Row>
                     <Col span={12}>
                         <h4>{resume.greetings}</h4>
-                        <h1>{resume.name + ' ' + resume.firstName}</h1>
+                        <h1>{resume.name + ' ' + props.resume.firstName}</h1>
                         <h3>{resume.position}</h3>
                     </Col>
                     <Col span={12}>
@@ -20,8 +21,8 @@ const Header = (props) => (
                     </Col>
                 </Row>
             </header>
-        )}
-    </ResumeContext.Consumer>
-);
+        </React.Fragment>
+    )
+};
 
-export default Header;
+export default withResumeData(Header);

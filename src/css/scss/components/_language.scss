@@ -1,0 +1,27 @@
+#languageSwitch{
+  position: absolute;
+    z-index: 100;
+    right: 10px;
+    top: 15px;
+}
+
+.flag{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding: 0px 13px 2px 13px;
+  margin-right: 7px;
+}
+// .flag{
+//   background-repeat: no-repeat;
+//   background-position: 4px center;
+//   background-size: auto 70%;
+//   padding-left: 33px;
+// }
+.frFlag{
+  background-image: url(../img/fr.svg);
+
+}
+.ukFlag{
+  background-image: url(../img/uk.svg);
+}
