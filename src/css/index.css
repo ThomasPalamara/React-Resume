@@ -10,6 +10,7 @@ body {
   margin: 0px;
   padding: 0;
   color: #636366;
+  background: linear-gradient(94deg, #5AB9EA, #8064d6);
   font-family: 'Lato', sans-serif !important; }
 
 p {
@@ -19,6 +20,21 @@ p {
   width: 100%;
   max-width: 1170px;
   margin: 15px auto; }
+
+.pseudo-body {
+  background-color: #fff;
+  width: 100%;
+  max-width: 1600px;
+  margin: 15px auto;
+  border-radius: 3px; }
+  .pseudo-body h1,
+  .pseudo-body h2,
+  .pseudo-body h3,
+  .pseudo-body h4,
+  .pseudo-body h5,
+  .pseudo-body h6 {
+    color: #414a4f;
+    font-family: 'Mukta Malar', sans-serif; }
 
 .section {
   padding-top: 50px;
@@ -30,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #414a4f;
+  color: #fff;
   font-family: 'Mukta Malar', sans-serif; }
 
 .primary-bg {
@@ -121,7 +137,10 @@ header {
   overflow: auto;
   position: relative;
   box-sizing: border-box;
-  color: #fff; }
+  color: #fff;
+  width: 100%;
+  max-width: 1600px;
+  margin: 15px auto; }
   header h1,
   header h3,
   header h4 {

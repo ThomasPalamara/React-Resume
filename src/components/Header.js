@@ -7,7 +7,7 @@ const Header = (props) => {
     return (
         <React.Fragment>
             <header>
-                <div className="header-bg"></div><Row>
+                <Row>
                     <Col span={12}>
                         <h4>{resume.greetings}</h4>
                         <h1>{resume.name + ' ' + props.resume.firstName}</h1>

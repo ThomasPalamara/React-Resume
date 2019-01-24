@@ -22,11 +22,15 @@ class Resume extends React.Component {
     render() {
         return (
             <ResumeContext.Provider value={resumeJSON[this.state.language]} className="App">
-                <Language languageHandler={this.languageHandler}/>
+                <Language languageHandler={this.languageHandler} />
                 <Header />
+                <div className="pseudo-body">
                     <Introduction />
-                    <Skills />
+                </div>
+                <Skills />
+                <div className="pseudo-body">
                     <Projects />
+                </div>
             </ResumeContext.Provider>
         )
     }

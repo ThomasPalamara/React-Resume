@@ -13,7 +13,7 @@ const Skills = (props) => {
     const resume = props.resume;
     return (
         <React.Fragment>
-            <Row type="flex" justify="center" className="section primary-bg">
+            <Row type="flex" justify="center" className="section">
                 <Col span={16}>
                     <h3 className="section-title">{resume.skills.title}</h3>
                     <div className="divider" />

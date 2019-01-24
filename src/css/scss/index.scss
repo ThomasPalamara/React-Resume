@@ -13,6 +13,8 @@ body {
   margin: 0px;
   padding: 0;
   color: #636366;
+  // background-color: #92C9FF ;
+  background: linear-gradient(94deg, #5AB9EA, #8064d6);
   font-family: 'Lato', sans-serif !important;
 }
 
@@ -26,6 +28,23 @@ p {
   margin: 15px auto
 }
 
+.pseudo-body{
+  background-color: #fff;
+  width: 100%;
+  max-width: 1600px;
+  margin: 15px auto;
+  border-radius: 3px;
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #414a4f;
+  font-family: 'Mukta Malar', sans-serif;
+}
+}
+
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -37,7 +56,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #414a4f;
+  color: #fff;
   font-family: 'Mukta Malar', sans-serif;
 }
 
