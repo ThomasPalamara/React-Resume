@@ -7,117 +7,21 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Mukta+Malar:200,300,400,500,600,700,800|Roboto|Source+Sans+Pro');
-@import './variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Open+Sans:300,400,700');
 
-body {
-  margin: 0px;
-  padding: 0;
-  color: #636366;
-  // background-color: #92C9FF ;
-  background: linear-gradient(94deg, #5AB9EA, #8064d6);
-  font-family: 'Lato', sans-serif !important;
-}
+@import './abstracts/variables.scss';
 
-p {
-  font-size: 16px;
-}
+@import './base/base.scss';
+@import './base/spacing.scss';
+@import './base/typography.scss';
+@import './base/utilities.scss';
 
-.container {
-  width: 100%;
-  max-width: 1170px;
-  margin: 15px auto
-}
+@import './components/card.scss';
+@import './components/composition.scss';
+@import './components/section-title.scss';
 
-.pseudo-body{
-  background-color: #fff;
-  width: 100%;
-  max-width: 1600px;
-  margin: 15px auto;
-  border-radius: 3px;
-  h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #414a4f;
-  font-family: 'Mukta Malar', sans-serif;
-}
-}
-
-.section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #fff;
-  font-family: 'Mukta Malar', sans-serif;
-}
-
-.primary-bg {
-  background-color: $primary;
-
-  h3.section-title {
-    color: #fff;
-
-    &+.divider {
-      background-color: #fff;
-    }
-  }
-}
-
-h3.section-title {
-  text-align: center;
-  font-size: 27px;
-  line-height: 31px;
-  font-weight: bold;
-  // letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  &+.divider {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    background-color: $primary;
-    height: 7px;
-    width: 50px;
-    border-radius: 100px;
-    position: relative;
-
-    &:after,
-    &:before {
-      content: '';
-      position: absolute;
-      display: inline-block;
-      background-color: $secondary;
-      height: 7px;
-      width: 7px;
-      border-radius: 100px;
-    }
-
-    &:after {
-      right: -15px;
-    }
-
-    &:before {
-      left: -15px;
-    }
-  }
-}
-
-#root {
-  overflow: auto;
-}
-
-
-@import './base/card.scss';
-@import './components/header.scss';
-@import './components/introduction.scss';
-@import './components/skills.scss';
-@import './components/projects.scss';
-@import './components/language.scss';
+@import './layout/header.scss';
+@import './layout/introduction.scss';
+@import './layout/language.scss';
+@import './layout/projects.scss';
+@import './layout/skills.scss';

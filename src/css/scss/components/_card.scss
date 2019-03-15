@@ -1,0 +1,45 @@
+.card-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;  
+}
+
+.card-col {
+    padding: 4px;
+
+    &.third {
+        width: 33.3333332%;
+    }
+
+    &.half {
+        width: 50%;
+    }
+}
+
+.card {
+    height: 100%;
+    padding: 30px 35px;
+    background: #fff;
+    box-shadow: 2px 2px 25px -4px rgba(0, 0, 0, 0.3);
+    transition: all .2s ease;
+
+    h4 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+    }
+}

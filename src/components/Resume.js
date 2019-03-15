@@ -1,39 +1,30 @@
-import React from "react";
-import Header from "./Header";
-import Introduction from "./Introduction";
-import Skills from "./Skills";
-import Projects from "./Projects";
-import Language from "./Language";
+import React, { useState } from 'react';
 import { ResumeContext, resumeJSON } from 'context/Resume';
+import Header from './Header';
+import Introduction from './Introduction';
+import Skills from './Skills';
+import Projects from './Projects';
+import Language from './Misc/Language';
 
-class Resume extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            language: 'en'
-        };
-    }
+const Resume = () => {
+  const [languageState, setLanguage] = useState('en');
 
-    languageHandler = (language) => {
-        console.log(language);
-        this.setState({ language })
-    }
+  const languageHandler = (language) => {
+    console.log(language);
+    setLanguage(language);
+  };
 
-    render() {
-        return (
-            <ResumeContext.Provider value={resumeJSON[this.state.language]} className="App">
-                <Language languageHandler={this.languageHandler} />
-                <Header />
-                <div className="pseudo-body">
-                    <Introduction />
-                </div>
-                <Skills />
-                <div className="pseudo-body">
-                    <Projects />
-                </div>
-            </ResumeContext.Provider>
-        )
-    }
+  return (
+    <ResumeContext.Provider value={resumeJSON[languageState]} className="App">
+      <Language languageHandler={languageHandler} />
+      <Header />
+      <div className="pseudo-body">
+        <Introduction />
+        <Skills />
+        <Projects />
+      </div>
+    </ResumeContext.Provider>
+  );
 };
 
 export default Resume;

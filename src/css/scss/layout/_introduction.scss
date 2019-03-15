@@ -1,0 +1,57 @@
+#introduction {
+    margin-bottom: 0;
+    // padding-bottom: 255px;
+    // background-image: url(../img/london.png);
+    // background-repeat: no-repeat;
+    // background-position: 50% 100%;
+
+    .parallax {
+        margin: 30px auto 0 auto;
+        width: 432px;
+        height: 250px;
+        overflow: hidden;
+        --y: 0px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .parallax-item {
+            position: absolute;
+            will-change: transform;
+
+            &:nth-child(1) {
+                transform: translateY(calc(var(--y) * 0.05));
+                z-index: 1;
+            }
+
+            &:nth-child(2) {
+                transform: translateY(calc(var(--y) * 0.01));
+                z-index: 2;
+            }
+
+            &:nth-child(3) {
+                transform: translateY(calc(var(--y) * 0.05));
+                z-index: 3;
+            }
+
+            &:nth-child(4) {
+                transform: translateY(calc(var(--y) * 0.03));
+                z-index: 4;
+            }
+
+            &:nth-child(5) {
+                z-index: 5;
+            }
+        }
+
+        .moving {
+            // position: fixed;
+        }
+
+    }
+}
