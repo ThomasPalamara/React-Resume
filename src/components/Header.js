@@ -6,8 +6,10 @@ const Header = (props) => (
     <ResumeContext.Consumer>
         {resume => (
             <header>
-                <div className="header-bg"></div><Row>
+                <div className="header-bg"></div>
+                <Row>
                     <Col span={12}>
+                <div className="header-bg1"></div>
                         <h4>{resume.greetings}</h4>
                         <h1>{resume.name + ' ' + resume.firstName}</h1>
                         <h3>{resume.position}</h3>
