@@ -44,7 +44,7 @@
         "title": "Some of my projects",
         "text": "Here some of my projects. Not much but working on filling this section !",
         "elements":[{
-            "title": "Auction Price Track Client",
+            "title": "Auction Price Track<br> Client",
             "description": "This project helps people to track the price of some items in the game World of Warcraft thus helps them make profits.\nThe client part allow users to select their what items interest them and display the statistics.",
             "techs": ["React", "Scss", "D3.js", "ES6"]
         },{

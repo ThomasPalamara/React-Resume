@@ -18,16 +18,18 @@ const Skills = ({ resume }) => (
         {resume.skills.categories.map((category, i) => (
           <div key={category.title} className={`card-col ${i < 3 ? 'third' : 'half'}`}>
             <div className="card">
-              <figure className="skills-icon">
-                <object data={svgs[i]} type="image/svg+xml" aria-label={`icon ${category.title}`} />
-              </figure>
-              <h4>{category.title}</h4>
-              <p>{category.description}</p>
-              <ul>
-                {category.elements.map(element => (
-                  <li key={element}>{element}</li>
-                ))}
-              </ul>
+              <div className="card__body">
+                <figure className="skills-icon">
+                  <object data={svgs[i]} type="image/svg+xml" aria-label={`icon ${category.title}`} />
+                </figure>
+                <h4>{category.title}</h4>
+                <p>{category.description}</p>
+                <ul>
+                  {category.elements.map(element => (
+                    <li key={element}>{element}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         ))}

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import london1 from 'img/london1.png';
-import london2 from 'img/london2.png';
-import london3 from 'img/london3.png';
-import london4 from 'img/london4.png';
-import londonBase from 'img/londonbase.png';
+import london1 from 'img/parallax/london1.png';
+import london2 from 'img/parallax/london2.png';
+import london3 from 'img/parallax/london3.png';
+import london4 from 'img/parallax/london4.png';
+import londonBase from 'img/parallax/londonbase.png';
 
 const Parallax = () => {
   useEffect(() => {

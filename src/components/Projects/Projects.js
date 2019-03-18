@@ -1,44 +1,63 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col } from 'antd';
-import { withResumeData } from '../context/Resume';
-import Title from './Misc/Title';
+import { withResumeData } from '../../context/Resume';
+import Title from '../Misc/Title';
+import ProjectCard from './ProjectCard';
+import ProjectModal from './ProjectModal';
 
+function importAll(r) {
+  const images = {};
+  r.keys().forEach((key) => {
+    images[key.replace('./', '')] = r(key);
+  });
+  return images;
+}
+const images = importAll(require.context('../../img/projects', false, /\.(png|jpe?g|svg)$/));
 
-const Projects = ({ resume }) => (
-  <React.Fragment>
+const Projects = ({ resume }) => {
+
+  const [modalVisibility, setModalVisibility] = useState(false);
+
+  const showModal = () => {
+    setModalVisibility(true);
+  }
+
+  const hideModal = () => {
+    setModalVisibility(false);
+  }
+
+  return (
     <div id="projects" className="section">
       <div className="container">
         <Title title={resume.projects.title} />
         <p className="mb-5">{resume.projects.text}</p>
         <Row type="flex" justify="space-around" gutter={16}>
           {resume.projects.elements.map(element => (
-            <Col span={6}>
-              <div className="card">
-                <div className="tag">APT</div>
-                <h3>{element.title}</h3>
-                <p>{element.description}</p>
-
-                <div className="project-tech">
-                  <p>Used in this project : </p>
-                  <ul>
-                    {element.techs.map(tech => (
-                      <li> {tech}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+            <Col key={element.title} xs={24} sm={16} md={8} lg={8}>
+              <ProjectCard element={element} images={images} showModal={showModal} />
+              <ProjectModal visible={modalVisibility} element={element} images={images} hideModal={hideModal} />
             </Col>
           ))}
         </Row>
       </div>
     </div>
-  </React.Fragment>
-);
+  );
+};
 
 Projects.propTypes = { resume: PropTypes.object.isRequired };
 
 export default withResumeData(Projects);
+
+// <div className="project__techList">
+// <p>Used in this project : </p>
+// <ul>
+//   {element.techs.map(tech => (
+//     <li key={tech}> {tech}</li>
+//   ))}
+// </ul>
+// </div>
+
 
 
 // componentDidMount() {

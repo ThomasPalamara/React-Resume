@@ -16,7 +16,7 @@ const Introduction = ({ resume }) => (
       <Title title={resume.introduction.title} />
       <Row type="flex" justify="space-between">
         <Col span={12}>
-          <p>{ReactHtmlParser(resume.introduction.text)}</p>
+          {ReactHtmlParser(resume.introduction.text)}
         </Col>
         <Col span={10}>
           <div className="composition">

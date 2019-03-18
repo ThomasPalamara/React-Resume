@@ -13,6 +13,7 @@
     }
 
     &:after {
+        @include absCenter;
         $size: 80px;
         content: '';
         height: $size;
@@ -20,13 +21,7 @@
         border-radius: 50px;
         background-color: $secondary;
         display: block;
-        position: absolute;
         z-index: 10;
-        top: 50%;
-        // bottom: 0;
-        left: 50%;
-        // right: 0;
-        transform: translate(-50%, -50%);
     }
 }
 
