@@ -1,0 +1,28 @@
+html{
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+  color: #636366;
+  // background-color: #92C9FF ;
+  // background: linear-gradient(94deg, #5AB9EA, #8064d6);
+  // background: linear-gradient(to right, #062C8D, #0FC4FF);
+  background: $main-gradient;
+  font-family: 'Maven Pro', sans-serif !important;
+}
+
+#root {
+  overflow: auto;
+}
+
+.pseudo-body {
+  background-color: $body-color;
+  width: 100%;
+  max-width: 1750px;
+  margin: 15px auto;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
