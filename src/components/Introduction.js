@@ -1,19 +1,36 @@
-import React from "react";
-import { withResumeData } from '../context/Resume';
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactHtmlParser from 'react-html-parser';
 import { Row, Col } from 'antd';
+import { withResumeData } from '../context/Resume';
+import Title from './Misc/Title';
+import Parallax from './Misc/Parallax';
+import compWeb from '../img/composition/composition-web.jpg';
+import compLondon from '../img/composition/composition-london2.jpg';
+import compElec from '../img/composition/composition-elec2.jpg';
 
-const Introduction = (props) => (
-    <React.Fragment>
-            <div id="introduction" className="section">
-                <Row type="flex" justify="center">
-                    <Col span={16}>
-                        <h3 className="section-title">{props.resume.introduction.title}</h3>
-                        <div className="divider"></div>
-                        <div dangerouslySetInnerHTML={{ __html: props.resume.introduction.text }} />
-                    </Col>
-                </Row>
-            </div>
-    </React.Fragment>
+
+const Introduction = ({ resume }) => (
+  <div id="introduction" className="section">
+    <div className="container">
+      <Title title={resume.introduction.title} />
+      <Row type="flex" justify="space-between">
+        <Col span={12}>
+          {ReactHtmlParser(resume.introduction.text)}
+        </Col>
+        <Col span={10}>
+          <div className="composition">
+            <img src={compWeb} alt="Code" className="composition__photo composition__photo--p1" />
+            <img src={compElec} alt="Printed Circuit" className="composition__photo composition__photo--p2" />
+            <img src={compLondon} alt="London" className="composition__photo composition__photo--p3" />
+          </div>
+        </Col>
+      </Row>
+      <Parallax />
+    </div>
+  </div>
 );
 
-export default withResumeData(Introduction) ;
+Introduction.propTypes = { resume: PropTypes.object.isRequired };
+
+export default withResumeData(Introduction);

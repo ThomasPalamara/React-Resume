@@ -1,0 +1,47 @@
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1300px;
+  }
+}
+
+.primary-bg {
+  background-color: $primary;
+
+  h3.section-title {
+    color: #fff;
+
+    &+.divider {
+      background-color: #fff;
+    }
+  }
+}
+
+.d-none{
+  display: none;
+}

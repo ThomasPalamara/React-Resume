@@ -1,0 +1,144 @@
+.skills-icon {
+    height: 50px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2em;
+
+    object {
+        height: 100%;
+        position: relative;
+        z-index: 20;
+        fill: #fff;
+        stroke: #fff;
+    }
+
+    &:after {
+        @include absCenter;
+        $size: 80px;
+        content: '';
+        height: $size;
+        width: $size;
+        border-radius: 50px;
+        background-color: $secondary;
+        display: block;
+        z-index: 10;
+    }
+}
+
+#skills {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 92%;
+        top: 20px;
+        -webkit-transform: skewY(-12deg);
+        -ms-transform: skewY(-12deg);
+        transform: skewY(-7deg);
+        background: #f6f9fc;
+    }
+
+    .card-row .card-col {
+        // &:first-child {
+        //     background-color: #869098;
+        // }
+
+        // &:nth-child(2){
+        //     background-color: #f3dc8a;
+        // }
+
+        // &:nth-child(3){
+        //     background-color: #fe8d95;
+        // }
+
+        // &:nth-child(4){
+        //     background-color: #92cee2;
+        // }
+
+        // &:nth-child(5){
+        //     background-color: #bd8af3;
+        // }
+
+        // &:nth-child(6){
+        //     background-color: $primary;
+        // }
+
+
+        &:first-child {
+            .card {
+                border-top-left-radius: $card-border-radius;
+
+                &:hover {
+                    transform: translate(-5px, -5px);
+                }
+            }
+
+            .skills-icon:after {
+                background-color: #869098;
+            }
+        }
+
+        &:nth-child(2) {
+            .card {
+                &:hover {
+                    transform: translate(0, -5px);
+                }
+            }
+
+            .skills-icon:after {
+                background-color: #f3dc8a;
+            }
+        }
+
+        &:nth-child(3) {
+            .card {
+                border-top-right-radius: $card-border-radius;
+
+                &:hover {
+                    transform: translate(5px, -5px);
+                }
+            }
+
+            .skills-icon:after {
+                background-color: #fe8d95;
+            }
+        }
+
+        &:nth-child(4) {
+            .card {
+                border-bottom-left-radius: $card-border-radius;
+
+                &:hover {
+                    transform: translate(-5px, 5px);
+                }
+            }
+
+            .skills-icon:after {
+                background-color: #92cee2;
+            }
+        }
+
+        &:nth-child(5) {
+            .card {
+                border-bottom-right-radius: $card-border-radius;
+
+                &:hover {
+                    transform: translate(5px, 5px);
+                }
+            }
+
+            .skills-icon:after {
+                background-color: #bd8af3;
+            }
+        }
+
+        &:nth-child(6) {
+            .skills-icon:after {
+                background-color: $primary;
+            }
+        }
+    }
+}
