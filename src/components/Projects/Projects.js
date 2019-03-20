@@ -17,7 +17,7 @@ const images = importAll(require.context('../../img/projects', false, /\.(png|jp
 
 const Projects = ({ resume }) => {
 
-  const [modalVisibility, setModalVisibility] = useState(false);
+  const [modalVisibility, setModalVisibility] = useState(true);
 
   const showModal = () => {
     setModalVisibility(true);

@@ -26,68 +26,127 @@
         }
     }
 
-    .project__item{
-        position: relative;
-    }
-
-    .project__picture {
-        height: 300px;
-        overflow: hidden;
-        background-size: 100% auto;
-        // background-image: $main-gradient;
-        background-blend-mode: multiply;
-        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-
-        img {
-            max-width: 100%;
-
-        }
-    }
-
-    .project__heading {
-        
-        position: absolute;
-        top: 22rem;
-        right: 1rem;
-        text-align: right;
-        max-width: 80%;
-        span{
-            box-decoration-break: clone;
+    .project {
+        &__item {
             position: relative;
-            padding: .5rem 1.5rem;
-            line-height: 2;
-            font-size: 2.8rem;
-            font-weight: 300;
-            text-transform: uppercase;
-            color: $white;
-            background-image: $title-gradient;
-        }
-    }
-
-    .project__techList {
-        background-color: $primary;
-        color: #fff;
-        margin: -20px;
-        margin-top: 0;
-        padding-top: 5px;
-        padding-left: 20px;
-        position: absolute;
-        bottom: 10px;
-        width: 100%;
-
-        p,
-        ul,
-        li {
-            display: inline-block;
         }
 
-        li {
-            &:after {
-                content: ',\2002';
+        &__picture {
+            height: 300px;
+            overflow: hidden;
+            background-size: 100% auto;
+            // background-image: $main-gradient;
+            background-blend-mode: multiply;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+            img {
+                max-width: 100%;
+
+            }
+        }
+
+        &__heading {
+
+            position: absolute;
+            top: 22rem;
+            right: 1rem;
+            text-align: right;
+            max-width: 80%;
+
+            span {
+                box-decoration-break: clone;
+                position: relative;
+                padding: .5rem 1.5rem;
+                line-height: 2;
+                font-size: 2.8rem;
+                font-weight: 300;
+                text-transform: uppercase;
+                color: $white;
+                background-image: $title-gradient;
+            }
+        }
+
+        &__modal {
+            &__picture {
+                max-width: 100%;
             }
 
-            &:last-child:after {
-                content: '.';
+            &__content {
+                padding-left: 3rem;
+                padding-top: 1.5rem;
+            }
+
+            &__links {
+                a {
+                    text-align: center;
+                    transition: all 0.2s;
+                    cursor: pointer;
+
+                    span {
+                        cursor: pointer;
+                        display: inline-block;
+                        position: relative;
+                        transition: 0.2s;
+
+                        &:after {
+                            content: '\203A';
+                            font-size: 26px;
+                            position: absolute;
+                            opacity: 0;
+                            top: -2px;
+                            right: -20px;
+                            transition: 0.3s;
+                        }
+                    }
+
+                    &:hover span {
+                        padding-right: 19px;
+
+                        &:after {
+                            opacity: 1;
+                            right: 0;
+                        }
+                    }
+                }
+
+                .githubLink {
+                    color: $black;
+                    border-width: 1px;
+                    border-color: $black;
+                }
+
+                .projectLink {
+                    color: $white;
+                    background-color: $primary;
+                }
+            }
+        }
+
+        .project__techList {
+            background-color: $primary;
+            color: #fff;
+            margin: -20px;
+            margin-top: 0;
+            padding-top: 5px;
+            padding-left: 20px;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+
+            p,
+            ul,
+            li {
+                display: inline-block;
+            }
+
+            li {
+                &:after {
+                    content: ',\2002';
+                }
+
+                &:last-child:after {
+                    content: '.';
+                }
             }
         }
     }

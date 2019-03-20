@@ -1718,6 +1718,17 @@ header h4 {
     transition: all 0.4s cubic-bezier(0.25, 0.5, 0.5, 0.9); }
     .modal__content .heading-grad {
       font-size: 3.4rem; }
+  .modal__btn-close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s ease; }
+    .modal__btn-close:hover {
+      color: #000; }
 
 .section-title {
   text-align: center;
@@ -1878,7 +1889,46 @@ header {
     color: #fff;
     background-image: linear-gradient(to right bottom, #6BCEEF, #517BE4); }
 
-#projects .project__techList {
+#projects .project__modal__picture {
+  max-width: 100%; }
+
+#projects .project__modal__content {
+  padding-left: 3rem;
+  padding-top: 1.5rem; }
+
+#projects .project__modal__links a {
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer; }
+  #projects .project__modal__links a span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s; }
+    #projects .project__modal__links a span:after {
+      content: '\203A';
+      font-size: 26px;
+      position: absolute;
+      opacity: 0;
+      top: -2px;
+      right: -20px;
+      transition: 0.3s; }
+  #projects .project__modal__links a:hover span {
+    padding-right: 19px; }
+    #projects .project__modal__links a:hover span:after {
+      opacity: 1;
+      right: 0; }
+
+#projects .project__modal__links .githubLink {
+  color: #000;
+  border-width: 1px;
+  border-color: #000; }
+
+#projects .project__modal__links .projectLink {
+  color: #fff;
+  background-color: #5AB9EA; }
+
+#projects .project .project__techList {
   background-color: #5AB9EA;
   color: #fff;
   margin: -20px;
@@ -1888,13 +1938,13 @@ header {
   position: absolute;
   bottom: 10px;
   width: 100%; }
-  #projects .project__techList p,
-  #projects .project__techList ul,
-  #projects .project__techList li {
+  #projects .project .project__techList p,
+  #projects .project .project__techList ul,
+  #projects .project .project__techList li {
     display: inline-block; }
-  #projects .project__techList li:after {
+  #projects .project .project__techList li:after {
     content: ',\2002'; }
-  #projects .project__techList li:last-child:after {
+  #projects .project .project__techList li:last-child:after {
     content: '.'; }
 
 .skills-icon {
