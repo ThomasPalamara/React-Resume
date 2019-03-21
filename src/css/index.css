@@ -1530,6 +1530,11 @@ body {
 p {
   font-size: 16px; }
 
+span.highlight {
+  color: #FF7E59;
+  cursor: pointer;
+  font-weight: bold; }
+
 h1,
 h2,
 h3,
@@ -1660,8 +1665,10 @@ header h4 {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     position: absolute;
-    transition: all .2s;
-    outline-offset: 1.3rem; }
+    transition: all .3s;
+    outline-offset: .5rem; }
+    .composition__photo img {
+      max-width: 100%; }
     .composition__photo--p1 {
       left: 0;
       top: -1rem; }
@@ -1672,15 +1679,35 @@ header h4 {
       top: 16rem;
       left: 50%;
       transform: translateX(-50%); }
-      .composition__photo--p3:hover {
+      .composition__photo--p3:hover, .composition__photo--p3.active {
         transform: scale(1.05) translateX(-50%) translateY(-0.5rem) !important; }
-    .composition__photo:hover {
-      outline: 1.5rem solid #FF7E59;
+    .composition__photo:hover, .composition__photo.active {
+      outline: 0.7rem solid #FF7E59;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
+  .composition.active .composition__photo:not(.active) {
+    transform: scale(0.95); }
+    .composition.active .composition__photo:not(.active):before {
+      content: "";
+      box-shadow: inset 30rem 30rem 30rem rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0; }
+  .composition.active .composition__photo--p3:not(.active) {
+    transform: scale(0.95) translateX(-50%); }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
+    .composition:hover .composition__photo:not(:hover):before {
+      content: "";
+      box-shadow: inset 30rem 30rem 30rem rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0; }
   .composition:hover .composition__photo--p3:not(:hover) {
     transform: scale(0.95) translateX(-50%); }
 
@@ -1825,7 +1852,8 @@ header {
   position: absolute;
   z-index: 100;
   right: 10px;
-  top: 15px; }
+  top: 15px;
+  text-transform: capitalize; }
 
 .flag {
   background-repeat: no-repeat;

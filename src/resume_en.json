@@ -1,4 +1,11 @@
 {
+    "misc": {
+        "learnMore":"Learn more",
+        "gitHubLink": "See GitHub repository",
+        "projectLink": "See project",
+        "frLang": "french",
+        "enLang": "english"
+    },
     "greetings": "Welcome on my digital resume, where you'll learn more about myself and what I do.",
     "name": "Lettre",
     "firstName": "Hermen",
@@ -16,7 +23,7 @@
     },
     "introduction": {
         "title": "About Myself",
-        "text": "<p>I’ve always been highly curious about the world around me. The acquisition of new knowledge is a great motivation for me, I’m always keen to learn new stuff. Be ready for the questions.<br>I’m a science lover and a geek keen on IT, video game, science fiction, music …<\/p><p>After high school I started to learn chemistry. As it turns out life led me back to computers with the my two-years degree in electrical engineering and computer science. I had a great time learning programming and animating robots and other electronic stuff.<\/p><p>Finally, I developed an android application as part of an internship. I wanted to experience all the possibilities that programming languages offers. I ended up learning web development.<\/p><p>Since then I moved in London to work in this great city.<\/p>"
+        "text": "<p>I’ve always been highly curious about the world around me. The acquisition of new knowledge is a great motivation for me, I’m always keen to learn new stuff. Be ready for the questions.<br>I’m a science lover and am keen on IT, video game, science fiction, music …<\/p><p>After high school I started to learn chemistry. As it turns out life led me back to computers with the my two-years degree in <span class=\"highlight\" data-highlight=\"1\">electrical engineering and computer science</span>. I had a great time learning programming and animating robots and other electronic stuff.<\/p><p>Finally, I developed an android application as part of an internship. I wanted to experience all the possibilities that programming languages offers. I ended up learning <span class=\"highlight\" data-highlight=\"2\">web development</span>.<\/p><p>Since then I moved in <span class=\"highlight\" data-highlight=\"3\">London</span> to work in this great city.<\/p>"
     },
     "skills": {
         "title": "My Skills",

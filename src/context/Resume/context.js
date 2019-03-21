@@ -8,7 +8,7 @@ export const resumeJSON = {
   fr: resumeFr,
 };
 
-const ResumeContext = React.createContext(null);
+const ResumeContext = React.createContext(resumeJSON.en);
 
 export const withResumeData = Component => props => (
   <ResumeContext.Consumer>

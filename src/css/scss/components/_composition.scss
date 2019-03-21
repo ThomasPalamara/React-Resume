@@ -1,43 +1,84 @@
-.composition{
+.composition {
   position: relative;
   padding-left: 30px;
-  &__photo{
+
+  &__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($shadow-dark, .4);
     border-radius: 2px;
     position: absolute;
-    transition: all .2s;
-    outline-offset: 1.3rem;
+    transition: all .3s;
+    outline-offset: .5rem;
 
-    &--p1{
+    img {
+      max-width: 100%;
+    }
+
+    &--p1 {
       left: 0;
       top: -1rem;
     }
-    &--p2{ 
+
+    &--p2 {
       right: 0;
       top: 7rem;
     }
-    &--p3{
+
+    &--p3 {
       top: 16rem;
       left: 50%;
       transform: translateX(-50%);
-      &:hover{
-        transform: scale(1.05) translateX(-50%) translateY(-.5rem)!important;
+
+      &:hover, &.active {
+        transform: scale(1.05) translateX(-50%) translateY(-.5rem) !important;
       }
     }
-    &:hover{
-      outline: 1.5rem solid $secondary;
+
+    &:hover, &.active {
+      outline: .7rem solid $secondary;
       transform: scale(1.05) translateY(-.5rem);
       box-shadow: 0 2.5rem 4rem rgba($shadow-dark, .5);
       z-index: 20;
     }
   }
-  &:hover &__photo{
-    &:not(:hover){
+
+  &.active &__photo{
+    &:not(.active) {
       transform: scale(.95);
+
+      &:before {
+        content: "";
+        box-shadow: inset 30rem 30rem 30rem rgba($shadow-dark, .3);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
     }
-    &--p3:not(:hover){
-    transform: scale(.95) translateX(-50%);
+    &--p3:not(.active) {
+      transform: scale(.95) translateX(-50%);
+
+    }
+  }
+
+  &:hover &__photo {
+    &:not(:hover) {
+      transform: scale(.95);
+
+      &:before {
+        content: "";
+        box-shadow: inset 30rem 30rem 30rem rgba($shadow-dark, .3);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+    }
+
+    &--p3:not(:hover) {
+      transform: scale(.95) translateX(-50%);
 
     }
   }
