@@ -7,6 +7,7 @@ import Header from './Header';
 import Introduction from './Introduction';
 import Skills from './Skills';
 import Projects from './Projects';
+import Contact from './Contact';
 import Language from './Misc/Language';
 
 
@@ -28,6 +29,7 @@ const Resume = () => {
             <Introduction />
             <Skills />
             <Projects />
+            <Contact />
           </div>
         </React.Fragment>
       </LocaleProvider>

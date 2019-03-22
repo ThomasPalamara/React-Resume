@@ -29,6 +29,13 @@
     .project {
         &__item {
             position: relative;
+            padding-bottom: 4rem;
+            button{
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
 
         &__picture {
@@ -36,7 +43,6 @@
             overflow: hidden;
             background-size: 100% auto;
             // background-image: $main-gradient;
-            background-blend-mode: multiply;
             clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 
             img {
@@ -73,6 +79,7 @@
 
             &__content {
                 padding-left: 3rem;
+                padding-right: .5rem;
                 padding-top: 1.5rem;
             }
 
@@ -81,6 +88,12 @@
                     text-align: center;
                     transition: all 0.2s;
                     cursor: pointer;
+                    border-radius: 2px;
+
+                    .anticon {
+                        font-size: 21px;
+                        vertical-align: -0.325em;
+                    }
 
                     span {
                         cursor: pointer;
@@ -109,35 +122,37 @@
                     }
                 }
 
-                .githubLink {
+                .githubLink:hover {
                     color: $black;
-                    border-width: 1px;
-                    border-color: $black;
+                    border-color: lighten($black, 5%);
                 }
 
                 .projectLink {
                     color: $white;
                     background-color: $primary;
+                    border-color: $primary;
                 }
             }
         }
 
-        .project__techList {
+        &__techList {
             background-color: $primary;
             color: #fff;
-            margin: -20px;
             margin-top: 0;
-            padding-top: 5px;
-            padding-left: 20px;
-            position: absolute;
-            bottom: 10px;
+            padding: 0.5rem 2rem;
             width: 100%;
+            display: flex;
+            align-items: center;
 
             p,
             ul,
             li {
                 display: inline-block;
+                margin-bottom: 0;
             }
+            ul{
+                padding-left: 3rem;
+            }  
 
             li {
                 &:after {

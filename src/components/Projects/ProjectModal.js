@@ -4,7 +4,7 @@ import ReactHtmlParser from 'react-html-parser';
 import { Row, Col, Icon, Button } from 'antd';
 
 
-const ProjectModal = ({ element, visible, images, hideModal }) => {
+const ProjectModal = ({ misc, element, visible, images, hideModal }) => {
   useEffect(() => {
     document.addEventListener('click', (e) => {
       if (e.target.classList.contains('modal')) {
@@ -28,12 +28,12 @@ const ProjectModal = ({ element, visible, images, hideModal }) => {
                 <Row>
                   <Col span={12}>
                     <Button type="ghost" href="https://github.com/ThomasPalamara/React-Resume" target="_blank" className="githubLink" icon="github">
-                      <span>See GitHub repository</span>
+                      <span>{misc.gitHubLink}</span>
                     </Button>
                   </Col>
                   <Col span={12}>
-                    <Button type="ghost" href="" target="_blank" className="projectLink" icon="github">
-                      <span>See the project</span>
+                    <Button type="ghost" href="" target="_blank" className="projectLink" icon="reconciliation">
+                      <span>{misc.projectLink}</span>
                     </Button>
                   </Col>
                 </Row>
@@ -41,6 +41,14 @@ const ProjectModal = ({ element, visible, images, hideModal }) => {
             </div>
           </Col>
         </Row>
+        <div className="project__techList">
+          <p>Used in this project : </p>
+          <ul>
+            {element.techs.map(tech => (
+              <li key={tech}> {tech}</li>
+            ))}
+          </ul>
+        </div>
         <button className="modal__btn-close" type="button" onClick={hideModal}><Icon type="close" /></button>
       </div>
     </div>
@@ -48,6 +56,7 @@ const ProjectModal = ({ element, visible, images, hideModal }) => {
 };
 
 ProjectModal.propTypes = {
+  misc: PropTypes.object.isRequired,
   element: PropTypes.object.isRequired,
   images: PropTypes.objectOf(PropTypes.string).isRequired,
   hideModal: PropTypes.func.isRequired,

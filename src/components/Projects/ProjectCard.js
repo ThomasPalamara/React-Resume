@@ -4,7 +4,7 @@ import ReactHtmlParser from 'react-html-parser';
 import { Button } from 'antd';
 
 
-const ProjectCard = ({ element, images, showModal }) => {
+const ProjectCard = ({ misc, element, images, showModal }) => {
 
   useEffect(() => {
     try {
@@ -26,7 +26,7 @@ const ProjectCard = ({ element, images, showModal }) => {
         </h3>
         <p>{element.description.short}</p>
         <Button type="primary" onClick={showModal}>
-          Open Modal
+          {misc.learnMore}
         </Button>
       </div>
     </div>
@@ -34,6 +34,7 @@ const ProjectCard = ({ element, images, showModal }) => {
 };
 
 ProjectCard.propTypes = {
+  misc: PropTypes.object.isRequired,
   element: PropTypes.object.isRequired,
   images: PropTypes.objectOf(PropTypes.string).isRequired,
   showModal: PropTypes.func.isRequired,

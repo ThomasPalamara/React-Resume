@@ -1614,7 +1614,7 @@ header h4 {
     width: 1300px; } }
 
 .primary-bg {
-  background-color: #5AB9EA; }
+  background-color: #58c0f5; }
   .primary-bg h3.section-title {
     color: #fff; }
     .primary-bg h3.section-title + .divider {
@@ -1733,7 +1733,6 @@ header h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 50rem;
     width: 70vw;
     background-color: #fff;
     z-index: 500;
@@ -1766,7 +1765,7 @@ header h4 {
   .section-title + .divider {
     margin: 0 auto;
     margin-bottom: 45px;
-    background-color: #5AB9EA;
+    background-color: #58c0f5;
     height: 7px;
     width: 50px;
     border-radius: 100px;
@@ -1869,7 +1868,7 @@ header {
   background-image: url(../img/icons/flags/uk.svg); }
 
 #projects .project-item {
-  border: #5AB9EA 1px solid;
+  border: #58c0f5 1px solid;
   border-radius: 16px;
   margin: 30px 0;
   padding: 20px;
@@ -1889,13 +1888,18 @@ header {
     z-index: -1; }
 
 #projects .project__item {
-  position: relative; }
+  position: relative;
+  padding-bottom: 4rem; }
+  #projects .project__item button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); }
 
 #projects .project__picture {
   height: 300px;
   overflow: hidden;
   background-size: 100% auto;
-  background-blend-mode: multiply;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
   #projects .project__picture img {
     max-width: 100%; }
@@ -1922,12 +1926,17 @@ header {
 
 #projects .project__modal__content {
   padding-left: 3rem;
+  padding-right: .5rem;
   padding-top: 1.5rem; }
 
 #projects .project__modal__links a {
   text-align: center;
   transition: all 0.2s;
-  cursor: pointer; }
+  cursor: pointer;
+  border-radius: 2px; }
+  #projects .project__modal__links a .anticon {
+    font-size: 21px;
+    vertical-align: -0.325em; }
   #projects .project__modal__links a span {
     cursor: pointer;
     display: inline-block;
@@ -1947,32 +1956,33 @@ header {
       opacity: 1;
       right: 0; }
 
-#projects .project__modal__links .githubLink {
+#projects .project__modal__links .githubLink:hover {
   color: #000;
-  border-width: 1px;
-  border-color: #000; }
+  border-color: #0d0d0d; }
 
 #projects .project__modal__links .projectLink {
   color: #fff;
-  background-color: #5AB9EA; }
+  background-color: #58c0f5;
+  border-color: #58c0f5; }
 
-#projects .project .project__techList {
-  background-color: #5AB9EA;
+#projects .project__techList {
+  background-color: #58c0f5;
   color: #fff;
-  margin: -20px;
   margin-top: 0;
-  padding-top: 5px;
-  padding-left: 20px;
-  position: absolute;
-  bottom: 10px;
-  width: 100%; }
-  #projects .project .project__techList p,
-  #projects .project .project__techList ul,
-  #projects .project .project__techList li {
-    display: inline-block; }
-  #projects .project .project__techList li:after {
+  padding: 0.5rem 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  #projects .project__techList p,
+  #projects .project__techList ul,
+  #projects .project__techList li {
+    display: inline-block;
+    margin-bottom: 0; }
+  #projects .project__techList ul {
+    padding-left: 3rem; }
+  #projects .project__techList li:after {
     content: ',\2002'; }
-  #projects .project .project__techList li:last-child:after {
+  #projects .project__techList li:last-child:after {
     content: '.'; }
 
 .skills-icon {
@@ -2041,4 +2051,4 @@ header {
   #skills .card-row .card-col:nth-child(5) .skills-icon:after {
     background-color: #bd8af3; }
   #skills .card-row .card-col:nth-child(6) .skills-icon:after {
-    background-color: #5AB9EA; }
+    background-color: #58c0f5; }

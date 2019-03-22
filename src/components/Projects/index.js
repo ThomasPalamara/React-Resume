@@ -1,3 +1,3 @@
-import Projects from './Projects';
+import ProjectsLayout from './ProjectsLayout';
 
-export default Projects;
+export default ProjectsLayout;
