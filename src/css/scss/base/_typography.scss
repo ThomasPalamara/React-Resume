@@ -63,9 +63,12 @@ header {
   }
 
   h4{
-      width: 600px;
+      max-width: 600px;
       font-size: 18px;
       font-weight: 400;
       margin-bottom: 100px;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 30px;
+      }
   }
 }

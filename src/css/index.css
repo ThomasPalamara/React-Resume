@@ -17,6 +17,9 @@ body {
   color: #636366;
   background: linear-gradient(to right, #517BE4, #6BCEEF);
   font-family: 'Maven Pro', sans-serif !important; }
+  @media (min-width: 768px) {
+    body {
+      padding: 0 20px; } }
 
 #root {
   overflow: auto; }
@@ -26,9 +29,12 @@ body {
   width: 100%;
   max-width: 1750px;
   margin: 15px auto;
-  border-radius: 8px;
+  border-radius: 0px;
   position: relative;
   z-index: 1; }
+  @media (min-width: 768px) {
+    .pseudo-body {
+      border-radius: 8px; } }
 
 .m-0 {
   margin: 0 !important; }
@@ -1582,10 +1588,13 @@ header h3 {
   font-size: 27px; }
 
 header h4 {
-  width: 600px;
+  max-width: 600px;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 100px; }
+  @media (max-width: 991.98px) {
+    header h4 {
+      margin-bottom: 30px; } }
 
 .section {
   padding-top: 75px;
@@ -1784,20 +1793,21 @@ header h4 {
       left: -15px; }
 
 header {
-  overflow: auto;
   position: relative;
   box-sizing: border-box;
   color: #fff;
   width: 100%;
   max-width: 1600px;
-  margin: 15px auto; }
-  header .ant-row {
-    margin: 70px 100px 75px 100px; }
-    header .ant-row > div:last-child {
-      padding: 70px 100px 115px 0px;
-      text-align: right; }
-      header .ant-row > div:last-child p {
-        font-weight: 500; }
+  margin: 15px auto;
+  padding-top: 70px; }
+  header .ant-row > div:last-child {
+    padding: 70px 5vw 115px 0px;
+    text-align: right; }
+    @media (max-width: 991.98px) {
+      header .ant-row > div:last-child {
+        padding: 30px 0px 20px 0px; } }
+    header .ant-row > div:last-child p {
+      font-weight: 500; }
   header .header-bg {
     position: absolute;
     width: 100%;
@@ -2022,6 +2032,14 @@ header {
     -ms-transform: skewY(-12deg);
     transform: skewY(-7deg);
     background: #f6f9fc; }
+  @media (max-width: 991.98px) {
+    #skills .card-row .card-col {
+      width: 100% !important;
+      margin-bottom: 20px; }
+      #skills .card-row .card-col .card {
+        border-radius: 0 !important; }
+        #skills .card-row .card-col .card__body {
+          padding: 30px 20px 15px; } }
   #skills .card-row .card-col:first-child .card {
     border-top-left-radius: 15px; }
     #skills .card-row .card-col:first-child .card:hover {

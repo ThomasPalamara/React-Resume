@@ -1,19 +1,23 @@
 header {
-    overflow: auto;
     position: relative;
     box-sizing: border-box;
     color: #fff;
     width: 100%;
     max-width: 1600px;
     margin: 15px auto;
+    padding-top: 70px;
 
     .ant-row {
-        margin: 70px 100px 75px 100px;
+        // margin: 70px 100px 75px 100px;
 
         &>div:last-child {
-            // color: #333;
-            padding: 70px 100px 115px 0px;
+            padding: 70px 5vw 115px 0px;
             text-align: right;
+
+            @include media-breakpoint-down(md) {
+                padding: 30px 0px 20px 0px;
+                // text-align-last: left;   
+            }
 
             p {
                 font-weight: 500;
@@ -44,7 +48,8 @@ header {
         z-index: -6;
         background-color: #2354f3;
     }
-   .header-bg1 {
+
+    .header-bg1 {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -53,7 +58,6 @@ header {
         left: 0;
         border-right: transparent 110px solid;
         border-top: solid 462px #333;
-        
         overflow: hidden;
     }
 }

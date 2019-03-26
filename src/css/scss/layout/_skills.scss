@@ -42,30 +42,18 @@
     }
 
     .card-row .card-col {
-        // &:first-child {
-        //     background-color: #869098;
-        // }
 
-        // &:nth-child(2){
-        //     background-color: #f3dc8a;
-        // }
-
-        // &:nth-child(3){
-        //     background-color: #fe8d95;
-        // }
-
-        // &:nth-child(4){
-        //     background-color: #92cee2;
-        // }
-
-        // &:nth-child(5){
-        //     background-color: #bd8af3;
-        // }
-
-        // &:nth-child(6){
-        //     background-color: $primary;
-        // }
-
+        @include media-breakpoint-down(md) {
+            
+            width: 100% !important;
+            margin-bottom: 20px;
+            .card {
+                border-radius: 0 !important;
+                &__body{
+                    padding: 30px 20px 15px;
+                }
+            }
+        }
 
         &:first-child {
             .card {

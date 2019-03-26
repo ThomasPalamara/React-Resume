@@ -51,19 +51,19 @@
         "title": "Some of my projects",
         "text": "Here some of my projects. Not much but working on filling this section !",
         "elements":[{
-            "title": "Auction&nbsp;Price&nbsp;Track Client",
+            "title": "Auction&nbsp;Price&nbsp;Track",
             "picture": "atp-client.png",
+            "WIP": true,
             "description": {
                 "short": "This project helps people to track the price of some items in the game World of Warcraft thus helps them make profits.",
-                "long": "This project helps people to track the price of some items in the game World of Warcraft thus helps them make profits.\nThe client part allow users to select their what items interest them and display the statistics."
+                "long": "World of Warcraft is an multiplayer RPG with its own economy where people trade goods against gold coins at the auction house. Player needs to craft or trade a lot of items helping them in their quest.\n This project helps people to track these items and their reagents thus helping them make profits. They can observe the evolution over the days and choose when buying and when selling."
             },
-            "techs": ["React", "Scss", "D3.js", "ES6"]
+            "techs": ["React", "Scss", "Recharts", "ES6"]
         },{
             "title": "Auction&nbsp;Price&nbsp;Track API",
             "picture": "atp-server.png",
-
             "description": {
-                "short": "API that allow to see the state of the auction house in game and so the data we need. ",
+                "short": "API that collect data and serve then to Auction Price Track. ",
                 "long": "It's the server part of the previous project. Blizzard (Developper of World Of warcraft) provides an API that allow us to see the state of the auction house in game and so the data we need. "
             },
             "techs": ["NodeJS", "API Rest", "MongoDB", "Mongoose"]

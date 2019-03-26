@@ -11,6 +11,9 @@ body {
   // background: linear-gradient(to right, #062C8D, #0FC4FF);
   background: $main-gradient;
   font-family: 'Maven Pro', sans-serif !important;
+  @include media-breakpoint-up(md) {
+    padding: 0 20px;
+  }
 }
 
 #root {
@@ -22,7 +25,10 @@ body {
   width: 100%;
   max-width: 1750px;
   margin: 15px auto;
-  border-radius: 8px;
+  border-radius: 0px;
   position: relative;
   z-index: 1;
+  @include media-breakpoint-up(md) {
+    border-radius: 8px;
+  }
 }
