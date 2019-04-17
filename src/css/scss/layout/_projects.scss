@@ -30,7 +30,8 @@
         &__item {
             position: relative;
             padding-bottom: 4rem;
-            button{
+
+            button {
                 position: absolute;
                 bottom: 20px;
                 left: 50%;
@@ -47,7 +48,6 @@
 
             img {
                 max-width: 100%;
-
             }
         }
 
@@ -81,56 +81,22 @@
                 padding-left: 3rem;
                 padding-right: .5rem;
                 padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
             }
 
             &__links {
-                a {
-                    text-align: center;
-                    transition: all 0.2s;
-                    cursor: pointer;
-                    border-radius: 2px;
-
-                    .anticon {
-                        font-size: 21px;
-                        vertical-align: -0.325em;
-                    }
-
-                    span {
-                        cursor: pointer;
-                        display: inline-block;
-                        position: relative;
-                        transition: 0.2s;
-
-                        &:after {
-                            content: '\203A';
-                            font-size: 26px;
-                            position: absolute;
-                            opacity: 0;
-                            top: -2px;
-                            right: -20px;
-                            transition: 0.3s;
-                        }
-                    }
-
-                    &:hover span {
-                        padding-right: 19px;
-
-                        &:after {
-                            opacity: 1;
-                            right: 0;
-                        }
-                    }
-                }
-
                 .githubLink:hover {
                     color: $black;
                     border-color: lighten($black, 5%);
                 }
-
                 .projectLink {
                     color: $white;
                     background-color: $primary;
                     border-color: $primary;
+
+                    @include media-breakpoint-down(sm) {
+                        margin-top: 1rem;
+                    }
                 }
             }
         }
@@ -150,9 +116,10 @@
                 display: inline-block;
                 margin-bottom: 0;
             }
-            ul{
+
+            ul {
                 padding-left: 3rem;
-            }  
+            }
 
             li {
                 &:after {

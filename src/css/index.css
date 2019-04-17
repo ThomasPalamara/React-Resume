@@ -1577,11 +1577,13 @@ header h4 {
 
 header h1 {
   margin-left: 20px;
-  font-size: 48px;
+  font-size: 57px;
   letter-spacing: 0.1em;
   font-family: 'League Spartan';
   margin-bottom: 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  --box-shadow-color: currentColor;
+  text-shadow: 4px 4px rgba(var(--box-shadow-color), 0.28); }
 
 header h3 {
   margin-left: 20px;
@@ -1631,6 +1633,36 @@ header h4 {
 
 .d-none {
   display: none; }
+
+.text-center {
+  text-align: center; }
+
+.btn-arrow, .btn-arrow a {
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+  border-radius: 2px; }
+  .btn-arrow .anticon, .btn-arrow a .anticon {
+    font-size: 21px;
+    vertical-align: -0.325em; }
+  .btn-arrow span, .btn-arrow a span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s; }
+    .btn-arrow span:after, .btn-arrow a span:after {
+      content: '\203A';
+      font-size: 26px;
+      position: absolute;
+      opacity: 0;
+      top: -2px;
+      right: -20px;
+      transition: 0.3s; }
+  .btn-arrow:hover span, .btn-arrow a:hover span {
+    padding-right: 19px; }
+    .btn-arrow:hover span:after, .btn-arrow a:hover span:after {
+      opacity: 1;
+      right: 0; }
 
 .card-row {
   display: flex;
@@ -1751,8 +1783,15 @@ header h4 {
     transform: translate(-30%, -50%);
     backface-visibility: hidden;
     transition: all 0.4s cubic-bezier(0.25, 0.5, 0.5, 0.9); }
+    @media (max-width: 991.98px) {
+      .modal__content {
+        width: 90vw; } }
     .modal__content .heading-grad {
-      font-size: 3.4rem; }
+      font-size: 3.4rem;
+      line-height: 1; }
+      @media (max-width: 767.98px) {
+        .modal__content .heading-grad {
+          font-size: 2.7rem; } }
   .modal__btn-close {
     position: absolute;
     right: 1.5rem;
@@ -1937,34 +1976,8 @@ header {
 #projects .project__modal__content {
   padding-left: 3rem;
   padding-right: .5rem;
-  padding-top: 1.5rem; }
-
-#projects .project__modal__links a {
-  text-align: center;
-  transition: all 0.2s;
-  cursor: pointer;
-  border-radius: 2px; }
-  #projects .project__modal__links a .anticon {
-    font-size: 21px;
-    vertical-align: -0.325em; }
-  #projects .project__modal__links a span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.2s; }
-    #projects .project__modal__links a span:after {
-      content: '\203A';
-      font-size: 26px;
-      position: absolute;
-      opacity: 0;
-      top: -2px;
-      right: -20px;
-      transition: 0.3s; }
-  #projects .project__modal__links a:hover span {
-    padding-right: 19px; }
-    #projects .project__modal__links a:hover span:after {
-      opacity: 1;
-      right: 0; }
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
 
 #projects .project__modal__links .githubLink:hover {
   color: #000;
@@ -1974,6 +1987,9 @@ header {
   color: #fff;
   background-color: #58c0f5;
   border-color: #58c0f5; }
+  @media (max-width: 767.98px) {
+    #projects .project__modal__links .projectLink {
+      margin-top: 1rem; } }
 
 #projects .project__techList {
   background-color: #58c0f5;

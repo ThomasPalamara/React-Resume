@@ -17,22 +17,22 @@ const ProjectModal = ({ misc, element, visible, images, hideModal }) => {
     <div className={`modal ${visible ? 'show' : ''}`}>
       <div className="project__modal modal__content">
         <Row type="flex" justify="space-around" gutter={0}>
-          <Col span={7}>
+          <Col xs={0} md={7}>
             <img className="project__modal__picture" src={images[element.picture]} alt={`Project ${element.title}`} />
           </Col>
-          <Col span={17}>
+          <Col xs={22} md={17}>
             <div className="project__modal__content">
               <h1 className="heading-grad">{ReactHtmlParser(element.title)}</h1>
               <p>{ReactHtmlParser(element.description.long)}</p>
               <div className="project__modal__links">
-                <Row>
-                  <Col span={12}>
-                    <Button type="ghost" href="https://github.com/ThomasPalamara/React-Resume" target="_blank" className="githubLink" icon="github">
+                <Row type="flex" justify="space-around">
+                  <Col xs={24} sm={12}>
+                    <Button type="ghost" href="https://github.com/ThomasPalamara/React-Resume" target="_blank" className="btn-arrow githubLink" icon="github">
                       <span>{misc.gitHubLink}</span>
                     </Button>
                   </Col>
-                  <Col span={12}>
-                    <Button type="ghost" href="" target="_blank" className="projectLink" icon="reconciliation">
+                  <Col xs={24} sm={12}>
+                    <Button type="ghost" href="" target="_blank" className="btn-arrow projectLink" icon="reconciliation">
                       <span>{misc.projectLink}</span>
                     </Button>
                   </Col>

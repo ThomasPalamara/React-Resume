@@ -50,11 +50,14 @@ header {
 
   h1 {
       margin-left: 20px;
-      font-size: 48px;
+      font-size: 57px;
       letter-spacing: 0.1em;
       font-family: 'League Spartan';
       margin-bottom: 0;
       text-transform: uppercase;
+      --box-shadow-color: currentColor;
+      text-shadow: 4px 4px rgba(var(--box-shadow-color), 0.28);
+      // text-shadow: 4px 4px rgba(currentColor, 0.28);
   }
 
   h3 {

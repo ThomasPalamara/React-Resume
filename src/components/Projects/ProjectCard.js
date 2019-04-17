@@ -25,7 +25,7 @@ const ProjectCard = ({ misc, element, images, showModal }) => {
           <span>{ReactHtmlParser(element.title)}</span>
         </h3>
         <p>{element.description.short}</p>
-        <Button type="primary" onClick={showModal}>
+        <Button type="primary" className="btn-arrow" onClick={showModal}>
           {misc.learnMore}
         </Button>
       </div>
