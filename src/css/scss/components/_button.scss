@@ -1,37 +1,42 @@
-.btn-arrow, .btn-arrow a {
+.btn-arrow,
+.btn-arrow a {
   text-align: center;
   transition: all 0.2s;
   cursor: pointer;
   border-radius: 2px;
 
   .anticon {
-      font-size: 21px;
-      vertical-align: -0.325em;
+    font-size: 21px;
+    vertical-align: -0.325em;
   }
 
   span {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.2s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
 
-      &:after {
-          content: '\203A';
-          font-size: 26px;
-          position: absolute;
-          opacity: 0;
-          top: -2px;
-          right: -20px;
-          transition: 0.3s;
-      }
+    &:after {
+      content: '\203A';
+      line-height: 0.8;
+      font-size: 26px;
+      position: absolute;
+      opacity: 0;
+      top: -2px;
+      right: -20px;
+      transition: 0.3s;
+    }
   }
 
-  &:hover span {
+  &:hover,
+  &:focus {
+    span {
       padding-right: 19px;
 
       &:after {
-          opacity: 1;
-          right: 0;
+        opacity: 1;
+        right: 0;
       }
+    }
   }
 }

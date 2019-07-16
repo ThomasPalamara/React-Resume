@@ -21,7 +21,7 @@ const ProjectsLayout = ({ resume }) => (
       <p className="mb-5">{resume.projects.text}</p>
       <Row type="flex" justify="space-around" gutter={16}>
         {resume.projects.elements.map(element => (
-          <Col key={element.title} xs={24} sm={16} md={10} lg={8} style={{ marginBottom: '54px' }}>
+          <Col key={element.title} xs={24} sm={16} lg={10} xl={8} style={{ marginBottom: '54px' }}>
             <Project element={element} misc={resume.misc} images={images} />
           </Col>
         ))}
@@ -42,8 +42,6 @@ export default withResumeData(ProjectsLayout);
 //   ))}
 // </ul>
 // </div>
-
-
 
 // componentDidMount() {
 //   window.addEventListener('scroll', this.handleScroll);

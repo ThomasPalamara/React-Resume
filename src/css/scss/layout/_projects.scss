@@ -1,135 +1,145 @@
 #projects {
+  // position: relative;
+  // z-index: 2;
+  // background-color: $body-color;
+  .project-item {
+    border: $primary 1px solid;
+    border-radius: 16px;
+    margin: 30px 0;
+    padding: 20px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    position: relative;
 
-    // position: relative;
-    // z-index: 2;
-    // background-color: $body-color;
-    .project-item {
-        border: $primary 1px solid;
-        border-radius: 16px;
-        margin: 30px 0;
-        padding: 20px;
-        padding-bottom: 50px;
-        overflow: hidden;
+    .tag {
+      font-family: 'League Spartan';
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      font-size: 103px;
+      font-weight: 900;
+      color: #eaeaea;
+      z-index: -1;
+    }
+  }
+
+  .project {
+    &__item {
+      position: relative;
+      padding-bottom: 4rem;
+
+      button {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__picture {
+      height: 300px;
+      overflow: hidden;
+      background-size: 100% auto;
+      // background-image: $main-gradient;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__heading {
+      position: absolute;
+      top: 22rem;
+      right: 1rem;
+      text-align: right;
+      max-width: 80%;
+
+      span {
+        box-decoration-break: clone;
         position: relative;
-
-        .tag {
-            font-family: 'League Spartan';
-            position: absolute;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: block;
-            font-size: 103px;
-            font-weight: 900;
-            color: #eaeaea;
-            z-index: -1;
-        }
+        padding: 0.5rem 1.5rem;
+        line-height: 2;
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $white;
+        background-image: $title-gradient;
+      }
     }
 
-    .project {
-        &__item {
-            position: relative;
-            padding-bottom: 4rem;
+    &__modal {
+      &__picture {
+        max-width: 100%;
+      }
 
-            button {
-                position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
+      &__content {
+        padding-left: 3rem;
+        padding-right: 0.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      &__links {
+        margin-right: 10px;
+        &__container {
+          min-width: 230px;
         }
-
-        &__picture {
-            height: 300px;
-            overflow: hidden;
-            background-size: 100% auto;
-            // background-image: $main-gradient;
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-
-            img {
-                max-width: 100%;
-            }
+        .githubLink {
+          span:after {
+            line-height: 1.2;
+          }
+          &:hover {
+            color: $black;
+            border-color: lighten($black, 5%);
+          }
         }
+        .projectLink {
+          span:after {
+            line-height: 1.2;
+          }
+          color: $white;
+          background-color: $primary;
+          border-color: $primary;
 
-        &__heading {
-
-            position: absolute;
-            top: 22rem;
-            right: 1rem;
-            text-align: right;
-            max-width: 80%;
-
-            span {
-                box-decoration-break: clone;
-                position: relative;
-                padding: .5rem 1.5rem;
-                line-height: 2;
-                font-size: 2.8rem;
-                font-weight: 300;
-                text-transform: uppercase;
-                color: $white;
-                background-image: $title-gradient;
-            }
+          @include media-breakpoint-down(sm) {
+            margin-top: 1rem;
+          }
         }
-
-        &__modal {
-            &__picture {
-                max-width: 100%;
-            }
-
-            &__content {
-                padding-left: 3rem;
-                padding-right: .5rem;
-                padding-top: 1.5rem;
-                padding-bottom: 1.5rem;
-            }
-
-            &__links {
-                .githubLink:hover {
-                    color: $black;
-                    border-color: lighten($black, 5%);
-                }
-                .projectLink {
-                    color: $white;
-                    background-color: $primary;
-                    border-color: $primary;
-
-                    @include media-breakpoint-down(sm) {
-                        margin-top: 1rem;
-                    }
-                }
-            }
-        }
-
-        &__techList {
-            background-color: $primary;
-            color: #fff;
-            margin-top: 0;
-            padding: 0.5rem 2rem;
-            width: 100%;
-            display: flex;
-            align-items: center;
-
-            p,
-            ul,
-            li {
-                display: inline-block;
-                margin-bottom: 0;
-            }
-
-            ul {
-                padding-left: 3rem;
-            }
-
-            li {
-                &:after {
-                    content: ',\2002';
-                }
-
-                &:last-child:after {
-                    content: '.';
-                }
-            }
-        }
+      }
     }
+
+    &__techList {
+      background-color: $primary;
+      color: #fff;
+      margin-top: 0;
+      padding: 0.5rem 2rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      p,
+      ul,
+      li {
+        display: inline-block;
+        margin-bottom: 0;
+      }
+
+      ul {
+        padding-left: 3rem;
+      }
+
+      li {
+        &:after {
+          content: ',\2002';
+        }
+
+        &:last-child:after {
+          content: '.';
+        }
+      }
+    }
+  }
 }

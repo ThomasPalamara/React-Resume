@@ -1,13 +1,14 @@
 @font-face {
   font-family: 'League Spartan';
+  font-display: swap;
   font-style: bold;
   font-weight: 700;
   src: url('../fonts/LeagueSpartan-Bold.otf');
   /* IE9 Compat Modes */
 }
 
-@import url('https://fonts.googleapis.com/css?family=Lato|Mukta+Malar:200,300,400,500,600,700,800|Roboto|Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato|Mukta+Malar:200,300,400,500,600,700,800|Roboto|Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Open+Sans:300,400,700&display=swap');
 
 @import './abstracts/variables.scss';
 @import './abstracts/mixins.scss';
