@@ -1926,107 +1926,102 @@ header {
 .ukFlag {
   background-image: url(../img/icons/flags/uk.svg); }
 
-#projects .project-item {
-  border: #58c0f5 1px solid;
-  border-radius: 16px;
-  margin: 30px 0;
-  padding: 20px;
-  padding-bottom: 50px;
-  overflow: hidden;
-  position: relative; }
-  #projects .project-item .tag {
-    font-family: 'League Spartan';
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    font-size: 103px;
-    font-weight: 900;
-    color: #eaeaea;
-    z-index: -1; }
-
-#projects .project__item {
-  position: relative;
-  padding-bottom: 4rem; }
-  #projects .project__item button {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%); }
-
-#projects .project__picture {
-  height: 300px;
-  overflow: hidden;
-  background-size: 100% auto;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
-  #projects .project__picture img {
-    max-width: 100%; }
-
-#projects .project__heading {
-  position: absolute;
-  top: 22rem;
-  right: 1rem;
-  text-align: right;
-  max-width: 80%; }
-  #projects .project__heading span {
-    box-decoration-break: clone;
+#projects {
+  padding-bottom: 140px; }
+  #projects .project-item {
+    border: #58c0f5 1px solid;
+    border-radius: 16px;
+    margin: 30px 0;
+    padding: 20px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    position: relative; }
+    #projects .project-item .tag {
+      font-family: 'League Spartan';
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      font-size: 103px;
+      font-weight: 900;
+      color: #eaeaea;
+      z-index: -1; }
+  #projects .project__item {
     position: relative;
-    padding: 0.5rem 1.5rem;
-    line-height: 2;
-    font-size: 2.8rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #fff;
-    background-image: linear-gradient(to right bottom, #6bceef, #517be4); }
-
-#projects .project__modal__picture {
-  max-width: 100%; }
-
-#projects .project__modal__content {
-  padding-left: 3rem;
-  padding-right: 0.5rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem; }
-
-#projects .project__modal__links {
-  margin-right: 10px; }
-  #projects .project__modal__links__container {
-    min-width: 230px; }
-  #projects .project__modal__links .githubLink span:after {
-    line-height: 1.2; }
-  #projects .project__modal__links .githubLink:hover {
-    color: #000;
-    border-color: #0d0d0d; }
-  #projects .project__modal__links .projectLink {
-    color: #fff;
-    background-color: #58c0f5;
-    border-color: #58c0f5; }
-    #projects .project__modal__links .projectLink span:after {
+    padding-bottom: 4rem; }
+    #projects .project__item button {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%); }
+  #projects .project__picture {
+    height: 300px;
+    overflow: hidden;
+    background-size: 100% auto;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+    #projects .project__picture img {
+      max-width: 100%; }
+  #projects .project__heading {
+    position: absolute;
+    top: 22rem;
+    right: 1rem;
+    text-align: right;
+    max-width: 80%; }
+    #projects .project__heading span {
+      box-decoration-break: clone;
+      position: relative;
+      padding: 0.5rem 1.5rem;
+      line-height: 2;
+      font-size: 2.8rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #fff;
+      background-image: linear-gradient(to right bottom, #6bceef, #517be4); }
+  #projects .project__modal__picture {
+    max-width: 100%; }
+  #projects .project__modal__content {
+    padding-left: 3rem;
+    padding-right: 0.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+  #projects .project__modal__links {
+    margin-right: 10px; }
+    #projects .project__modal__links__container {
+      min-width: 230px; }
+    #projects .project__modal__links .githubLink span:after {
       line-height: 1.2; }
-    @media (max-width: 767.98px) {
-      #projects .project__modal__links .projectLink {
-        margin-top: 1rem; } }
-
-#projects .project__techList {
-  background-color: #58c0f5;
-  color: #fff;
-  margin-top: 0;
-  padding: 0.5rem 2rem;
-  width: 100%;
-  display: flex;
-  align-items: center; }
-  #projects .project__techList p,
-  #projects .project__techList ul,
-  #projects .project__techList li {
-    display: inline-block;
-    margin-bottom: 0; }
-  #projects .project__techList ul {
-    padding-left: 3rem; }
-  #projects .project__techList li:after {
-    content: ',\2002'; }
-  #projects .project__techList li:last-child:after {
-    content: '.'; }
+    #projects .project__modal__links .githubLink:hover {
+      color: #000;
+      border-color: #0d0d0d; }
+    #projects .project__modal__links .projectLink {
+      color: #fff;
+      background-color: #58c0f5;
+      border-color: #58c0f5; }
+      #projects .project__modal__links .projectLink span:after {
+        line-height: 1.2; }
+      @media (max-width: 767.98px) {
+        #projects .project__modal__links .projectLink {
+          margin-top: 1rem; } }
+  #projects .project__techList {
+    background-color: #58c0f5;
+    color: #fff;
+    margin-top: 0;
+    padding: 0.5rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center; }
+    #projects .project__techList p,
+    #projects .project__techList ul,
+    #projects .project__techList li {
+      display: inline-block;
+      margin-bottom: 0; }
+    #projects .project__techList ul {
+      padding-left: 3rem; }
+    #projects .project__techList li:after {
+      content: ',\2002'; }
+    #projects .project__techList li:last-child:after {
+      content: '.'; }
 
 .skills-icon {
   height: 50px;
@@ -2103,3 +2098,19 @@ header {
     background-color: #bd8af3; }
   #skills .card-row .card-col:nth-child(6) .skills-icon:after {
     background-color: #58c0f5; }
+
+.ending__container {
+  background-color: #293347;
+  max-width: 1200px;
+  padding: 3.5rem 2rem;
+  margin-top: -9rem;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #293347;
+  text-align: center;
+  z-index: 2000;
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 12px; }
+
+.ending__title {
+  font-weight: normal;
+  color: #fff !important; }

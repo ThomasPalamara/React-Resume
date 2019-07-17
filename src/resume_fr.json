@@ -1,56 +1,89 @@
 {
-    "greetings": "Welcome on my digital resume, where you'll learn more about myself and what I do.",
-    "name": "Thomas",
-    "firstName": "Palamara",
-    "birthDate": "05/11/1994",
-    "email": "palamara.thomas@gmail.com",
-    "position": "Developpeur Front-End",
-    "location": {
-        "city": "London",
-        "Country": "United Kingdom",
-        "countryCode": "UK"
-    },
-    "phoneNumber": {
-        "fr": "(+33) 667 258 927",
-        "en": "(+44) 770 720 4667"
-    },
-    "introduction": {
-        "title": "About Myself",
-        "text": "<p>I’ve always been highly curious about the world around me. The acquisition of new knowledge is a great motivation for me, I’m always keen to learn new stuff. Be ready for the questions.<br>I’m a science lover and am keen on IT, video game, science fiction, music …<\/p><p>After high school I started to learn chemistry. As it turns out life led me back to computers with the my two-years degree in <span class=\"highlight\" data-highlight=\"1\">electrical engineering and computer science</span>. I had a great time learning programming and animating robots and other electronic stuff.<\/p><p>Finally, I developed an android application as part of an internship. I wanted to experience all the possibilities that programming languages offers. I ended up learning <span class=\"highlight\" data-highlight=\"2\">web development</span>.<\/p><p>Since then I moved in <span class=\"highlight\" data-highlight=\"3\">London</span> to work in this great city.<\/p>"
-    },
-    "skills": {
-        "title": "My Skills",
-        "categories": [{
-            "title": "Front-End",
-            "description": "I love how programming allow us to give life to our ideas and allow users enjoy them. I place great emphasis on intuitive and clean experiences.",
-            "elements": ["JavaScript", "JQuery", "ReactJS", "HTML", "CSS", "Sass", "Bootstrap"]
-        }, {
-            "title": "Tools",
-            "description": "Using the right tools is the most important thing while coding. Some save you time, some simplify your work... If something is bothering you there is a tool to help you.",
-            "elements": ["Git", "npm", "yarn", "Grunt", "Webpack", "WampServer", "Visual Studio Code"]
-        }, {
-            "title": "Back-End",
-            "description": "Using the right tools is the most important thing while coding. Some save you time, some simplify your work... If something is bothering you there is a tool to help you.",
-            "elements": ["SQL", "phpMyAdmin", "MongoDB", "NodeJS", "PHP"]
-        }, {
-            "title": "Languages",
-            "elements": ["French: Native", "English: Advanced"]
-        },{
-            "title": "Design",
-            "elements": ["Photoshop", "Illustrator", "Figma"]
-        }]
-    },
-    "projects":{
-        "title": "Some of my projects",
-        "text": "Here some of my projects. Not much but working on filling this section !",
-        "elements":[{
-            "title": "Auction Price Track<br> Client",
-            "description": "This project helps people to track the price of some items in the game World of Warcraft thus helps them make profits.\nThe client part allow users to select their what items interest them and display the statistics.",
-            "techs": ["React", "Scss", "D3.js", "ES6"]
-        },{
-            "title": "Auction Price Track Server API",
-            "description": "It's the server part of the previous project. Blizzard (Developper of World Of warcraft) provides an API that allow us to see the state of the auction house in game and so the data we need. ",
-            "techs": ["NodeJS", "API Rest", "MongoDB", "Mongoose"]
-        }]
-    }
+  "language": "fr",
+  "misc": {
+    "learnMore": "En savoir plus",
+    "gitHubLink": "Voir le dépot git",
+    "projectLink": "Voir le projet",
+    "frLang": "french",
+    "enLang": "english"
+  },
+  "greetings": "Bienvenue sur mon CV en ligne où vous pourrez en apprendre plus sur moi et sur ce que je fais.",
+  "name": "Palamara",
+  "firstName": "Thomas",
+  "birthDate": "05/11/1994",
+  "email": "palamara.thomas@gmail.com",
+  "position": "Développeur front-end",
+  "linkdin": "https://www.linkedin.com/in/thomas-palamara-a8ab36a7/?locale=en_US",
+  "location": {
+    "city": "Londres",
+    "Country": "Royaumes Unis",
+    "countryCode": "UK"
+  },
+  "phoneNumber": {
+    "fr": "(+33) 667 258 927",
+    "en": "(+44) 741 401 0115"
+  },
+  "introduction": {
+    "title": "À propos de moi",
+    "text": "<p>J'ai toujours été très curieux du monde autour de moi. L'aquisition de nouvelles connassances est une source de motivation pour moi, apprendre de nouvelles choses est une passion. Soyez donc prêts pour les questions.<br> Je suis un amoureux de science et adore l'informatique, les jeux video, la science fiction, la musique ...</p><p>Après le lycée j'ai commencé mon cursus en chimie. Il se trouve que je me suis finalement tourné vers l'informatique pour obtenir mon DUT en : <span class=\"highlight\" data-highlight=\"1\">génie électrique et informatique industrielle</span>. C'était très stimulant d'apprendre la programmation et d'animer des robot et autres appareils électroniques</p><p>Finalement, lors d'un stage, j'ai eu l'opportunité de développer une application android. J'ai beaucoup apprécié travailler sur un concept plus abstrait et apprendre la programation orienté objet.</p>"
+  },
+  "skills": {
+    "title": "Mes compétences",
+    "categories": [
+      {
+        "title": "Front-End",
+        "description": "I love how programming allow us to give life to our ideas and allow users enjoy them. I place great emphasis on intuitive and clean experiences.",
+        "elements": ["JavaScript", "JQuery", "ReactJS", "HTML", "CSS", "Sass", "Bootstrap"]
+      },
+      {
+        "title": "Outils",
+        "description": "Using the right tools is the most important thing while coding. Some save you time, some simplify your work... If something is bothering you there is a tool to help you.",
+        "elements": ["Git", "npm", "yarn", "Grunt", "Webpack", "WampServer", "Visual Studio Code"]
+      },
+      {
+        "title": "Back-End",
+        "description": "Using the right tools is the most important thing while coding. Some save you time, some simplify your work... If something is bothering you there is a tool to help you.",
+        "elements": ["SQL", "phpMyAdmin", "MongoDB", "NodeJS", "PHP"]
+      },
+      {
+        "title": "Langues",
+        "elements": ["Français: Maternelle", "English: Courant"]
+      },
+      {
+        "title": "Design",
+        "elements": ["Photoshop", "Illustrator", "Figma"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Mes projets",
+    "text": "Here some of my projects. Not much but working on filling this section !",
+    "elements": [
+      {
+        "active": true,
+        "title": "Auction&nbsp;Price&nbsp;Track",
+        "picture": "atp-client.png",
+        "WIP": true,
+        "git": "https://github.com/ThomasPalamara/auction-price-track-client",
+        "url": "https://auction-price-track.netlify.com/",
+        "description": {
+          "short": "This project helps people to track the price of some items in the game World of Warcraft thus helps them make profits.",
+          "long": "World of Warcraft is an multiplayer RPG with its own economy where people trade goods against gold coins at the auction house. Player needs to craft or trade a lot of items helping them in their quest.\n This project helps people to track these items and their reagents thus helping them make profits. They can observe the evolution over the days and choose when buying and when selling."
+        },
+        "techs": ["React", "Scss", "Recharts", "ES6"]
+      },
+      {
+        "active": true,
+        "title": "Auction&nbsp;Price&nbsp;Track API",
+        "picture": "atp-server.png",
+        "git": "https://github.com/ThomasPalamara/auction-price-track-server",
+        "url": "https://auction-price-track-server.herokuapp.com/api/docs/",
+        "description": {
+          "short": "API that collect data and then serve them to Auction Price Track. ",
+          "long": "It's the server part of the previous project. Blizzard (Developper of World Of warcraft) provides an API that allow us to see the state of the auction house in game and so the data we need. "
+        },
+        "techs": ["NodeJS", "API Rest", "MongoDB", "Mongoose"]
+      }
+    ]
+  }
 }

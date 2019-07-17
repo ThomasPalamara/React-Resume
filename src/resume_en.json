@@ -1,4 +1,5 @@
 {
+  "language": "en",
   "misc": {
     "learnMore": "Learn more",
     "gitHubLink": "See GitHub repository",
@@ -12,6 +13,7 @@
   "birthDate": "05/11/1994",
   "email": "palamara.thomas@gmail.com",
   "position": "Front-end Developper",
+  "linkdin": "https://www.linkedin.com/in/thomas-palamara-a8ab36a7/?locale=en_US",
   "location": {
     "city": "London",
     "Country": "United Kingdom",
@@ -23,7 +25,7 @@
   },
   "introduction": {
     "title": "About Myself",
-    "text": "<p>I’ve always been highly curious about the world around me. The acquisition of new knowledge is a great motivation for me, I’m always keen to learn new stuff. So e ready for the questions.<br>I’m a science lover and am keen on IT, video game, science fiction, music …</p><p>After high school I started to learn chemistry. As it turns out life led me back to computers with the my two-years degree in <span class=\"highlight\" data-highlight=\"1\">electrical engineering and computer science</span>. I had a great time learning programming and animating robots and other electronic stuff.</p><p>Finally, I developed an android application as part of an internship. I wanted to experience all the possibilities that programming languages offers. I ended up learning <span class=\"highlight\" data-highlight=\"2\">web development</span>.</p><p>Since then I moved in <span class=\"highlight\" data-highlight=\"3\">London</span> to work in this great city.</p>"
+    "text": "<p>I’ve always been highly curious about the world around me. The acquisition of new knowledge is a great source of motivation for me, I’m always keen to learn new stuff. So be ready for the questions.<br>I’m a science lover and am keen on IT, video game, science fiction, music …</p><p>After high school I started to learn chemistry. As it turns out life led me back to computers with the my two-years degree in <span class=\"highlight\" data-highlight=\"1\">electrical engineering and computer science</span>. It was really stimulating to learn programming and animate robots and other electronic devices.</p><p>Finally, I had the oppotunity to develop an android application as part of an internship. I enjoyed object oriented programming and more a more abstract concept. I ended up learning <span class=\"highlight\" data-highlight=\"2\">web development</span> and really liked it.</p><p>Since then I moved in <span class=\"highlight\" data-highlight=\"3\">London</span> to work in this great city and pursue a fulling career of font-end developer</p>"
   },
   "skills": {
     "title": "My Skills",
@@ -58,6 +60,7 @@
     "text": "Here some of my projects. Not much but working on filling this section !",
     "elements": [
       {
+        "active": true,
         "title": "Auction&nbsp;Price&nbsp;Track",
         "picture": "atp-client.png",
         "WIP": true,
@@ -70,12 +73,13 @@
         "techs": ["React", "Scss", "Recharts", "ES6"]
       },
       {
+        "active": true,
         "title": "Auction&nbsp;Price&nbsp;Track API",
         "picture": "atp-server.png",
         "git": "https://github.com/ThomasPalamara/auction-price-track-server",
         "url": "https://auction-price-track-server.herokuapp.com/api/docs/",
         "description": {
-          "short": "API that collect data and serve then to Auction Price Track. ",
+          "short": "API that collect data and then serve them to Auction Price Track. ",
           "long": "It's the server part of the previous project. Blizzard (Developper of World Of warcraft) provides an API that allow us to see the state of the auction house in game and so the data we need. "
         },
         "techs": ["NodeJS", "API Rest", "MongoDB", "Mongoose"]

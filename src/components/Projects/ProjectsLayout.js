@@ -20,11 +20,22 @@ const ProjectsLayout = ({ resume }) => (
       <Title title={resume.projects.title} />
       <p className="mb-5">{resume.projects.text}</p>
       <Row type="flex" justify="space-around" gutter={16}>
-        {resume.projects.elements.map(element => (
-          <Col key={element.title} xs={24} sm={16} lg={10} xl={8} style={{ marginBottom: '54px' }}>
-            <Project element={element} misc={resume.misc} images={images} />
-          </Col>
-        ))}
+        {resume.projects.elements.map((element) => {
+          if (element.active) {
+            return (
+              <Col
+                key={element.title}
+                xs={24}
+                sm={16}
+                lg={10}
+                xl={8}
+                style={{ marginBottom: '54px' }}
+              >
+                <Project element={element} misc={resume.misc} images={images} />
+              </Col>
+            );
+          }
+        })}
       </Row>
     </div>
   </div>
