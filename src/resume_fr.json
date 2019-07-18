@@ -25,24 +25,24 @@
   },
   "introduction": {
     "title": "À propos de moi",
-    "text": "<p>J'ai toujours été très curieux du monde autour de moi. L'aquisition de nouvelles connassances est une source de motivation pour moi, apprendre de nouvelles choses est une passion. Soyez donc prêts pour les questions.<br> Je suis un amoureux de science et adore l'informatique, les jeux video, la science fiction, la musique ...</p><p>Après le lycée j'ai commencé mon cursus en chimie. Il se trouve que je me suis finalement tourné vers l'informatique pour obtenir mon DUT en : <span class=\"highlight\" data-highlight=\"1\">génie électrique et informatique industrielle</span>. C'était très stimulant d'apprendre la programmation et d'animer des robot et autres appareils électroniques</p><p>Finalement, lors d'un stage, j'ai eu l'opportunité de développer une application android. J'ai beaucoup apprécié travailler sur un concept plus abstrait et apprendre la programation orienté objet.</p>"
+    "text": "<p>J'ai toujours été très curieux du monde autour de moi. L'acquisition de nouvelles connaissances est une source de motivation pour moi, apprendre de nouvelles choses est une passion. Soyez donc prêts pour les questions.<br> Je suis un amoureux de science et adore l'informatique, les jeux vidéo, la science-fiction, la musique ...</p><p>Après le lycée, j'ai commencé mon cursus en chimie. Il se trouve que je me suis finalement tourné vers l'informatique pour obtenir mon DUT en : <span class=\"highlight\" data-highlight=\"1\">génie électrique et informatique industrielle</span>. C'était très stimulant d'apprendre la programmation et d'animer des robot et autres appareils électroniques.</p><p>Finalement, lors d'un stage, j'ai eu l'opportunité de développer une application Android. J'ai beaucoup apprécié travailler sur un concept plus abstrait et apprendre la programmation orientée objet. C'est pourquoi je me suis mis à étudier le <span class=\"highlight\" data-highlight=\"2\">developpement web</span>.</p><p>Depuis, j'ai démenager à <span class=\"highlight\" data-highlight=\"3\">Londres</span> et m'épanouis dans ma carrière de développeur front-end</p>"
   },
   "skills": {
     "title": "Mes compétences",
     "categories": [
       {
         "title": "Front-End",
-        "description": "I love how programming allow us to give life to our ideas and allow users enjoy them. I place great emphasis on intuitive and clean experiences.",
+        "description": "J'aime la liberté que nous offre la programmation pour nous permettre de donner vie à nos idées et permet aux utilisateurs de les apprécier. Je donne une grande importance à proposer une expérience intuitive.",
         "elements": ["JavaScript", "JQuery", "ReactJS", "HTML", "CSS", "Sass", "Bootstrap"]
       },
       {
         "title": "Outils",
-        "description": "Using the right tools is the most important thing while coding. Some save you time, some simplify your work... If something is bothering you there is a tool to help you.",
+        "description": "Utiliser les bons outils est une importante facette de la programmation. Ils vous font gagner du temps et vous simplifie la tache.",
         "elements": ["Git", "npm", "yarn", "Grunt", "Webpack", "WampServer", "Visual Studio Code"]
       },
       {
         "title": "Back-End",
-        "description": "Using the right tools is the most important thing while coding. Some save you time, some simplify your work... If something is bothering you there is a tool to help you.",
+        "description": "",
         "elements": ["SQL", "phpMyAdmin", "MongoDB", "NodeJS", "PHP"]
       },
       {
@@ -57,7 +57,7 @@
   },
   "projects": {
     "title": "Mes projets",
-    "text": "Here some of my projects. Not much but working on filling this section !",
+    "text": "Voici certains de mes projets. Certains sont toujours des travails en cours.",
     "elements": [
       {
         "active": true,
@@ -67,8 +67,8 @@
         "git": "https://github.com/ThomasPalamara/auction-price-track-client",
         "url": "https://auction-price-track.netlify.com/",
         "description": {
-          "short": "This project helps people to track the price of some items in the game World of Warcraft thus helps them make profits.",
-          "long": "World of Warcraft is an multiplayer RPG with its own economy where people trade goods against gold coins at the auction house. Player needs to craft or trade a lot of items helping them in their quest.\n This project helps people to track these items and their reagents thus helping them make profits. They can observe the evolution over the days and choose when buying and when selling."
+          "short": "Ce projet aide les joueurs à suivre les prix de certains objets dans le jeu World of Warcraft et ainsi les aider à faire des profits",
+          "long": "World of Warcraft est un RPG multijoueur en ligne avec sa propre économie. Les joueurs échangent des biens contre des pièces d'or à l'hôtel des ventes. Ces aventuriers ont besoin de fabriquer et échanger un bon nombre d'objets s'ils espèrent progresser dans leurs quêtes.\n Ce projet les aide à suivre ces objets et leurs composants pour les aider à faire du profit. Ils peuvent observer l'évolution de leur prix sur une période de 21 jours et ainsi décider quand les vendre ou quand les acheter."
         },
         "techs": ["React", "Scss", "Recharts", "ES6"]
       },
@@ -79,8 +79,8 @@
         "git": "https://github.com/ThomasPalamara/auction-price-track-server",
         "url": "https://auction-price-track-server.herokuapp.com/api/docs/",
         "description": {
-          "short": "API that collect data and then serve them to Auction Price Track. ",
-          "long": "It's the server part of the previous project. Blizzard (Developper of World Of warcraft) provides an API that allow us to see the state of the auction house in game and so the data we need. "
+          "short": "L'API qui collecte les données et les rend disponibles sur Auction Price Track.",
+          "long": "C'est la partie serveur du projet Auction Price Track. Blizzard (Developpeur de World of Warcraft) fournis une API qui nous permet de voir l'état de l'hôtel des ventes en jeu et donc les données dont nous avons besoin."
         },
         "techs": ["NodeJS", "API Rest", "MongoDB", "Mongoose"]
       }

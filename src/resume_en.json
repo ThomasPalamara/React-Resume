@@ -25,7 +25,7 @@
   },
   "introduction": {
     "title": "About Myself",
-    "text": "<p>I’ve always been highly curious about the world around me. The acquisition of new knowledge is a great source of motivation for me, I’m always keen to learn new stuff. So be ready for the questions.<br>I’m a science lover and am keen on IT, video game, science fiction, music …</p><p>After high school I started to learn chemistry. As it turns out life led me back to computers with the my two-years degree in <span class=\"highlight\" data-highlight=\"1\">electrical engineering and computer science</span>. It was really stimulating to learn programming and animate robots and other electronic devices.</p><p>Finally, I had the oppotunity to develop an android application as part of an internship. I enjoyed object oriented programming and more a more abstract concept. I ended up learning <span class=\"highlight\" data-highlight=\"2\">web development</span> and really liked it.</p><p>Since then I moved in <span class=\"highlight\" data-highlight=\"3\">London</span> to work in this great city and pursue a fulling career of font-end developer</p>"
+    "text": "<p>I’ve always been highly curious about the world around me. The acquisition of new knowledge is a great source of motivation for me. I’m always keen to learn new stuff. So be ready for the questions.<br>I’m a science lover and am keen on IT, video game, science fiction, music …</p><p>After high school I started to learn chemistry. As it turns out life led me back to computers with the my two-years degree in <span class=\"highlight\" data-highlight=\"1\">electrical engineering and computer science</span>. It was really stimulating to learn programming and animate robots and other electronic devices.</p><p>Finally, I had the opportunity to develop an android application as part of an internship. I enjoyed this more abstract approach of programming. This is why I ended up learning <span class=\"highlight\" data-highlight=\"2\">web development</span> and really liked it.</p><p>Since then I moved in <span class=\"highlight\" data-highlight=\"3\">London</span> to work in this great city and pursue a fulfilling career of font-end developer</p>"
   },
   "skills": {
     "title": "My Skills",
@@ -37,12 +37,12 @@
       },
       {
         "title": "Tools",
-        "description": "Using the right tools is the most important thing while coding. Some save you time, some simplify your work... If something is bothering you there is a tool to help you.",
+        "description": "Using the right tools is the most important thing while coding. Some save you time or some simplify your task... If something is bothering you there is a tool to help you.",
         "elements": ["Git", "npm", "yarn", "Grunt", "Webpack", "WampServer", "Visual Studio Code"]
       },
       {
         "title": "Back-End",
-        "description": "Using the right tools is the most important thing while coding. Some save you time, some simplify your work... If something is bothering you there is a tool to help you.",
+        "description": "",
         "elements": ["SQL", "phpMyAdmin", "MongoDB", "NodeJS", "PHP"]
       },
       {
@@ -57,7 +57,7 @@
   },
   "projects": {
     "title": "Some of my projects",
-    "text": "Here some of my projects. Not much but working on filling this section !",
+    "text": "Here some of my projects. Not much but working on filling this section!",
     "elements": [
       {
         "active": true,
@@ -68,7 +68,7 @@
         "url": "https://auction-price-track.netlify.com/",
         "description": {
           "short": "This project helps people to track the price of some items in the game World of Warcraft thus helps them make profits.",
-          "long": "World of Warcraft is an multiplayer RPG with its own economy where people trade goods against gold coins at the auction house. Player needs to craft or trade a lot of items helping them in their quest.\n This project helps people to track these items and their reagents thus helping them make profits. They can observe the evolution over the days and choose when buying and when selling."
+          "long": "World of Warcraft is an massively multiplayer online RPG with its own economy where people trade goods against gold coins at the auction house. Players need to craft or trade a lot of items helping them in their quest.\n This project helps people to track these items and their reagents thus helping them make profits. They can observe the evolution of their price over the days and choose when buying and when selling."
         },
         "techs": ["React", "Scss", "Recharts", "ES6"]
       },
@@ -80,7 +80,7 @@
         "url": "https://auction-price-track-server.herokuapp.com/api/docs/",
         "description": {
           "short": "API that collect data and then serve them to Auction Price Track. ",
-          "long": "It's the server part of the previous project. Blizzard (Developper of World Of warcraft) provides an API that allow us to see the state of the auction house in game and so the data we need. "
+          "long": "It's the server part of the previous project. Blizzard (Developer of World Of warcraft) provides an API that allow us to see the state of the auction house in game and so the data we need. "
         },
         "techs": ["NodeJS", "API Rest", "MongoDB", "Mongoose"]
       }
