@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ResumeContext, resumeJSON } from 'context/Resume';
 import { LocaleProvider } from 'antd';
 import frFR from 'antd/lib/locale-provider/fr_FR';
@@ -9,6 +9,7 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Ending from './Ending';
 import Language from './Misc/Language';
+import resumePdf from '../img/ThomasPalamaraResume.pdf';
 
 const Resume = () => {
   const [languageState, setLanguage] = useState('en');
@@ -16,6 +17,13 @@ const Resume = () => {
   const languageHandler = (language) => {
     setLanguage(language);
   };
+
+  useEffect(() => {
+    console.log(document.querySelectorAll('[data-cv-link]'));
+    document.querySelectorAll('[data-cv-link]').forEach((e) => {
+      e.setAttribute('href', resumePdf);
+    });
+  });
 
   return (
     <ResumeContext.Provider value={resumeJSON[languageState]} className="App">

@@ -1,12 +1,16 @@
-#languageSwitch{
+#languageSwitch {
   position: absolute;
-    z-index: 100;
-    right: 10px;
-    top: 15px;
-    text-transform: capitalize;
+  z-index: 100;
+  right: 10px;
+  top: 15px;
+  text-transform: capitalize;
 }
 
-.flag{
+.ant-select-dropdown-menu-item {
+  text-transform: capitalize;
+}
+
+.flag {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -19,10 +23,9 @@
 //   background-size: auto 70%;
 //   padding-left: 33px;
 // }
-.frFlag{
+.frFlag {
   background-image: url(../img/icons/flags/fr.svg);
-
 }
-.ukFlag{
+.ukFlag {
   background-image: url(../img/icons/flags/uk.svg);
 }

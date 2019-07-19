@@ -8,8 +8,8 @@
     "enLang": "english"
   },
   "greetings": "Welcome on my digital resume, where you'll learn more about myself and what I do.",
-  "name": "Lettre",
-  "firstName": "Hermen",
+  "name": "Palamara",
+  "firstName": "Thomas",
   "birthDate": "05/11/1994",
   "email": "palamara.thomas@gmail.com",
   "position": "Front-end Developper",
@@ -23,6 +23,7 @@
     "fr": "(+33) 667 258 927",
     "en": "(+44) 741 401 0115"
   },
+  "links": "Take a look at my<a href= className=\"link\" target=\"_blank\" rel=\"noopener noreferrer\">  <span>Resume</span></a><span className=\"d-inline-block\">  or visit my&nbsp;  <a    style={: '24px', color: '#fff'    href=\"https: //www.linkedin.com/in/thomas-palamara-a8ab36a7/locale=en_US\" target=\"_blank\" rel=\"noopener noreferrer\"><Icon type=\"linkedin\" theme=\"filled\" /></a>&nbsp;profile</span>",
   "introduction": {
     "title": "About Myself",
     "text": "<p>I’ve always been highly curious about the world around me. The acquisition of new knowledge is a great source of motivation for me. I’m always keen to learn new stuff. So be ready for the questions.<br>I’m a science lover and am keen on IT, video game, science fiction, music …</p><p>After high school I started to learn chemistry. As it turns out life led me back to computers with the my two-years degree in <span class=\"highlight\" data-highlight=\"1\">electrical engineering and computer science</span>. It was really stimulating to learn programming and animate robots and other electronic devices.</p><p>Finally, I had the opportunity to develop an android application as part of an internship. I enjoyed this more abstract approach of programming. This is why I ended up learning <span class=\"highlight\" data-highlight=\"2\">web development</span> and really liked it.</p><p>Since then I moved in <span class=\"highlight\" data-highlight=\"3\">London</span> to work in this great city and pursue a fulfilling career of font-end developer</p>"
@@ -85,5 +86,9 @@
         "techs": ["NodeJS", "API Rest", "MongoDB", "Mongoose"]
       }
     ]
+  },
+  "ending": {
+    "mainText": "Thank you for reading me.",
+    "secondaryText": "If you wish to get in touch, do not hesitate to contact me using <a href=\"https://www.linkedin.com/in/thomas-palamara-a8ab36a7/?locale=en_US\" target=\"_blank\" rel=\"noopener\">Linkedin</a> or my contacts present in my <a data-cv-link target=\"_blank\" rel=\"noopener\">resume</a>"
   }
 }

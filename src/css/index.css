@@ -1635,6 +1635,9 @@ header h4 {
 .d-none {
   display: none; }
 
+.d-inline-block {
+  display: inline-block; }
+
 .text-center {
   text-align: center; }
 
@@ -1849,6 +1852,53 @@ header {
   max-width: 1600px;
   margin: 15px auto;
   padding-top: 70px; }
+  header .link {
+    display: inline-block;
+    position: relative;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 3px; }
+    header .link:hover, header .link:focus, header .link:visited {
+      text-decoration: none; }
+    header .link span {
+      display: block;
+      padding: 0px 3px; }
+      header .link span::before, header .link span::after {
+        content: '';
+        width: 2px;
+        height: 0;
+        position: absolute;
+        transition: all 0.2s linear;
+        background: #fff; }
+      header .link span::before {
+        left: 0;
+        bottom: 0; }
+      header .link span::after {
+        right: 0;
+        bottom: 0; }
+    header .link::before, header .link::after {
+      content: '';
+      width: 0;
+      height: 2px;
+      position: absolute;
+      transition: all 0.2s linear;
+      background: #fff; }
+    header .link::before {
+      right: 50%;
+      top: 0; }
+    header .link::after {
+      left: 0;
+      bottom: 0;
+      width: 100%; }
+    header .link:hover::before, header .link:hover::after {
+      right: 0;
+      width: 100%;
+      transition-delay: 0.2s; }
+    header .link:hover span::before,
+    header .link:hover span::after {
+      height: 100%;
+      transition-delay: 0.2s; }
   header .ant-row > div:last-child {
     padding: 70px 5vw 115px 0px;
     text-align: right; }
@@ -1911,6 +1961,9 @@ header {
   z-index: 100;
   right: 10px;
   top: 15px;
+  text-transform: capitalize; }
+
+.ant-select-dropdown-menu-item {
   text-transform: capitalize; }
 
 .flag {

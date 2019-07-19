@@ -1,63 +1,142 @@
 header {
+  position: relative;
+  box-sizing: border-box;
+  color: #fff;
+  width: 100%;
+  max-width: 1600px;
+  margin: 15px auto;
+  padding-top: 70px;
+
+  .link {
+    display: inline-block;
     position: relative;
-    box-sizing: border-box;
+    background: none;
     color: #fff;
-    width: 100%;
-    max-width: 1600px;
-    margin: 15px auto;
-    padding-top: 70px;
-
-    .ant-row {
-        // margin: 70px 100px 75px 100px;
-
-        &>div:last-child {
-            padding: 70px 5vw 115px 0px;
-            text-align: right;
-
-            @include media-breakpoint-down(md) {
-                padding: 30px 0px 20px 0px;
-                // text-align-last: left;   
-            }
-
-            p {
-                font-weight: 500;
-            }
-        }
+    cursor: pointer;
+    margin: 0 3px;
+    &:hover,
+    &:focus,
+    &:visited {
+      text-decoration: none;
     }
-
-    // .header-bg {
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 100%;
-    //     overflow: hidden;
-    //     transform: skewY(-2deg);
-    //     transform-origin: 0;
-    //     // background: linear-gradient(90deg, #4776e6 0%, #8e54e9 100%);
-    //     // background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(120,50,255,1) 0%, rgba(50,150,250,1) 91% );
-    //     // background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(33,99,255,1) 0%, rgba(50,150,250,1) 91% );
-    //     background: radial-gradient(circle farthest-corner at 10% 20%, #1a55e0 0%, #00c0ff 91%);
-    //     // background-image: linear-gradient(90deg, rgba(85,88,218,1), rgba(95,209,249,1));
-    //     // background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
-    //     // background-image: url(../img/trianglify1.png);
-    //     background-size: cover;
-    // }
-    .header-bg {
+    span {
+      display: block;
+      padding: 0px 3px;
+      &::before,
+      &::after {
+        content: '';
+        width: 2px;
+        height: 0;
         position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: -6;
-        background-color: #2354f3;
-    }
-
-    .header-bg1 {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        top: 0px;
+        transition: all 0.2s linear;
+        background: #fff;
+      }
+      &::before {
         left: 0;
-        border-right: transparent 110px solid;
-        border-top: solid 462px #333;
-        overflow: hidden;
+        bottom: 0;
+      }
+      &::after {
+        right: 0;
+        bottom: 0;
+      }
     }
+    &::before,
+    &::after {
+      content: '';
+      width: 0;
+      height: 2px;
+      position: absolute;
+      transition: all 0.2s linear;
+      background: #fff;
+    }
+    &::before {
+      right: 50%;
+      top: 0;
+    }
+    &::after {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    &:hover {
+      &::before,
+      &::after {
+        right: 0;
+        width: 100%;
+        transition-delay: 0.2s;
+      }
+      span::before,
+      span::after {
+        height: 100%;
+        transition-delay: 0.2s;
+      }
+    }
+    // &:hover {
+    //   border: 2px solid #fff;
+    // }
+
+    // &:after {
+    //   content: '';
+    //   width: 100%;
+    //   height: 2px;
+    //   background-color: $white;
+    //   position: absolute;
+    //   bottom: -2px;
+    //   left: 0;
+    // }
+  }
+
+  .ant-row {
+    // margin: 70px 100px 75px 100px;
+
+    & > div:last-child {
+      padding: 70px 5vw 115px 0px;
+      text-align: right;
+
+      @include media-breakpoint-down(md) {
+        padding: 30px 0px 20px 0px;
+        // text-align-last: left;
+      }
+
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+
+  // .header-bg {
+  //     position: absolute;
+  //     width: 100%;
+  //     height: 100%;
+  //     overflow: hidden;
+  //     transform: skewY(-2deg);
+  //     transform-origin: 0;
+  //     // background: linear-gradient(90deg, #4776e6 0%, #8e54e9 100%);
+  //     // background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(120,50,255,1) 0%, rgba(50,150,250,1) 91% );
+  //     // background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(33,99,255,1) 0%, rgba(50,150,250,1) 91% );
+  //     background: radial-gradient(circle farthest-corner at 10% 20%, #1a55e0 0%, #00c0ff 91%);
+  //     // background-image: linear-gradient(90deg, rgba(85,88,218,1), rgba(95,209,249,1));
+  //     // background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+  //     // background-image: url(../img/trianglify1.png);
+  //     background-size: cover;
+  // }
+  .header-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -6;
+    background-color: #2354f3;
+  }
+
+  .header-bg1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0;
+    border-right: transparent 110px solid;
+    border-top: solid 462px #333;
+    overflow: hidden;
+  }
 }

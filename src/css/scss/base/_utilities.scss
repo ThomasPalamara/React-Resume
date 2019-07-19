@@ -36,16 +36,20 @@
   h3.section-title {
     color: #fff;
 
-    &+.divider {
+    & + .divider {
       background-color: #fff;
     }
   }
 }
 
-.d-none{
+.d-none {
   display: none;
 }
 
-.text-center{
+.d-inline-block {
+  display: inline-block;
+}
+
+.text-center {
   text-align: center;
 }
