@@ -12,9 +12,10 @@ import Language from './Misc/Language';
 import resumePdf from '../img/ThomasPalamaraResume.pdf';
 
 const Resume = () => {
-  const [languageState, setLanguage] = useState('en');
+  const [languageState, setLanguage] = useState(localStorage.getItem('language') || 'en');
 
   const languageHandler = (language) => {
+    localStorage.setItem('language', language);
     setLanguage(language);
   };
 
